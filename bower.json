@@ -1,0 +1,10 @@
+{
+  "name": "suzuki",
+  "version": "0.0.0",
+  "dependencies": {
+    "normalize-css": "~3.0.1",
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "foundation": "~5.5.2"
+  }
+}

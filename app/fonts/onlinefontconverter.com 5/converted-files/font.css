@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SuzukiPROBold';
+  src: url('SuzukiPROBold.eot');
+  src: url('SuzukiPROBold.eot?#iefix') format('embedded-opentype'),
+       url('SuzukiPROBold.woff2') format('woff2'),
+       url('SuzukiPROBold.woff') format('woff'),
+       url('SuzukiPROBold.ttf') format('truetype'),
+       url('SuzukiPROBold.svg#SuzukiPROBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

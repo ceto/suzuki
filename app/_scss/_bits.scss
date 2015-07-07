@@ -1,0 +1,41 @@
+/*****************
+ Color Definitions
+ *****************/
+
+
+/* White */
+$white: #fff; 
+$prilight: #f7f6f6; //main bg color 
+$seclight: #EFF0EA;
+
+/* Black */
+$black: #000;
+$pridark:#575757; // text color
+$secdark:#c2c2c2;
+
+$highlight:#0073e6; // blue bg
+$highlight-light:#c8e7fb;
+
+$highlight-dark:#003d8c;
+$highlight-light2:#0852a3;
+
+$highlight-light3:#72bff0;
+
+
+
+/*********************
+ Breakpoints and width
+ *********************/
+
+$s0: 320px;
+$s1: 480px;
+$s2: 768px;
+$s3: 1024px;
+$s4: 1280px;
+$s5: 1600px;
+
+$narrowmax: 890px;
+$normalmax: 1140px;
+$widemax: 1600px;
+
+

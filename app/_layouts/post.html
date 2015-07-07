@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<article class="post post--{{ page.type }} post--single">
+	<div class="wrapper wrapper__wide">
+		<div class="post__inner">
+		<header class="post__header">
+			<div class="post__meta">
+				<time class="post__meta__time">{{ page.date | date_to_string }}</time>
+				<span class="post__meta__author">&nbsp;&middot;&nbsp;<a href="#">{{ page.author }}</a></span>
+				<span class="post__meta__notecount">&nbsp;&middot;&nbsp;<a href="#">{{ page.notecount }}</a></span>
+			</div>
+			<h1 class="post__title">{{ page.title }}</h1>
+			<ul class="post__tags">
+					{% for tag in page.categories %}
+					<li class="post__tags__item">
+						<a href="#">#{{ tag }}</a>
+					</li>
+					{% endfor %}
+			</ul>
+		</header>
+		<div class="post__content">
+				{{ content }}		
+		</div>
+		<footer class="post__footer">
+			<time class="post__time">{{ page.date | date_to_string }}</time>
+			<span class="post__notecount">&nbsp;|&nbsp;<a href="#">{{ page.notecount }}</a></span>
+			<div class="post__buttons">
+				<a href="#"><i class="icon icon--socialshare"></i></a>
+				<a href="#"><i class="icon icon--reblog"></i></a>
+				<a href="#"><i class="icon icon--heart"></i></a>
+			</div>
+		</footer>
+
+	</div>
+	</div>
+</article>
+
+<section class="related__posts postlist">
+	<div class="wrapper wrapper--wide">
+		<h3 class="related__posts__title">Related posts</h3>
+	  <div class="isotopegrid">
+			{% for post in site.posts %}
+				 {% include posttile.html %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

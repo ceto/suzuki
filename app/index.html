@@ -1,0 +1,12 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<section class="home__posts postlist">
+	<div class="row">
+		{% for post in site.posts %}
+			 {% include posttile.html %}
+		{% endfor %}
+	</div>
+</section>
