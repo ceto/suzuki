@@ -7,14 +7,14 @@
 //   height:auto;
 // }
 
-// html {
-// 	overflow-y: auto;
-// 	min-height: 100%;
-// 	text-size-adjust: 100%;
-// 	-moz-osx-font-smoothing: grayscale;
-// 	-webkit-font-smoothing: antialiased;
-// 	text-rendering: optimizeLegibility;
-// }
+html {
+//	overflow-y: auto;
+//	min-height: 100%;
+//	text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
 
 // body {
 // 	overflow-x:hidden;

@@ -1,14 +1,13 @@
+@import "bits";
 @import "settings";
 @import "../_bower_components/foundation/scss/foundation/components/grid";
 @import "../_bower_components/foundation/scss/foundation/components/block-grid";
-@import "../_bower_components/foundation/scss/foundation/components/offcanvas";
 @import "../_bower_components/foundation/scss/foundation/components/visibility";
-@import "../_bower_components/foundation/scss/foundation/components/top-bar";
-@import "bits";
 @import "fonts";
 @import "mixins";
 @import "grid";
 @import "base";
+@import "toprow";
 @import "header";
 @import "posts";
 @import "footer";
