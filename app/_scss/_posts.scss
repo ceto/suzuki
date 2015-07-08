@@ -1,0 +1,16 @@
+.post {
+	@include clearfix();
+	position: relative;
+	margin:1em 0;
+}
+.post__figure {
+	margin:0;
+}
+
+.post__header {
+}
+
+
+.post__content {
+	display: none;
+}

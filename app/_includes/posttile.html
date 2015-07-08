@@ -1,33 +1,25 @@
-<article class="columns small-12 medium-6 large-4 xlarge-3 xxlarge-2 post post--tile post--{{ post.type }} isotopegrid__item">
-	<div class="post__inner">
-		{% if post.type == "photo" %}
-		<figure class="post__figure">
-			<a href="{{ post.url }}">
-				<img src="{{ post.figure }}" width="{{ post.width }}" height="{{ post.height }}" alt="{{ post.title }}">
-			</a>
-			<figcaption class="post__figcaption">{{ post.figcaption }}</figcaption>
-		</figure>
-		{% endif %}
-		{% if post.type == "text" %}
+<article class="post post--tile post--{{ post.type }}">
+	<div class="row collapse">
+		<div class="medium-6 medium-push-10 columns">
+			<figure class="post__figure">
+				<a href="{{ post.url }}">
+					<img src="http://lorempixel.com/640/480/sports" width="640" height="480" alt="{{ post.title }}">
+				</a>
+			</figure>
+		</div>
+		
+		<div class="medium-10 medium-pull-6 columns">
 			<header class="post__header">
 				<h3 class="post__title">
 					<a href="{{ post.url }}">{{ post.title }}</a>
 				</h3>
-				<span class="post__author"><a href="#">{{ post.author }}</a></span>
+				<time class="post__time">{{ post.date | date_to_string }}</time>
+				<div class="post__content">
+					{{ post.excerpt }}
+				</div>
+				<a class="post__coverlink" href="{{ post.url }}"></a>
 			</header>
-			<div class="post__content">
-				{{ post.excerpt }}
-			</div>
-		{% endif %}
-		<footer class="post__footer">
-			<time class="post__time">{{ post.date | date_to_string }}</time>
-			<span class="post__notecount">&nbsp;|&nbsp;<a href="#">{{ post.notecount }}</a></span>
-			<div class="post__buttons">
-				<a href="#"><i class="icon icon--socialshare"></i></a>
-				<a href="#"><i class="icon icon--reblog"></i></a>
-				<a href="#"><i class="icon icon--heart"></i></a>
-			</div>
-		</footer>
-		<a class="post__coverlink" href="{{ post.url }}"></a>
+		<div class="medium-6 columns">
+	
 	</div>
 </article>

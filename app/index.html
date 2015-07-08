@@ -1,12 +1,65 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Suzuki Marine
 ---
 
-<section class="home__posts postlist">
+<header class="pageheader pageheader--home">
 	<div class="row">
-		{% for post in site.posts %}
-			 {% include posttile.html %}
-		{% endfor %}
+		<div class="small-16 medium-12 large-12 large-push-2 xlarge-10 columns">
+			<div class="pageheader__text">
+				<h1>It's all great!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptate eum reiciendis quae temporibus.</p>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="thetriad">
+	<div class="row">
+
+		<div class="small-16 medium-5 large-4 large-push-2 columns">
+			<div class="thetriad__elem">
+				<h3 class="thetriad__elem__title inversehead"><a href="#">Hajómotor</a></h3>
+				<p class="thetriad__elem__content">
+					<img src="http://placehold.it/640x640" alt="">
+				</p>
+			</div>
+		</div>
+
+		<div class="small-16 medium-5 large-4 large-push-2 columns">
+			<div class="thetriad__elem">
+				<h3 class="thetriad__elem__title inversehead"><a href="#">Hajótest</a></h3>
+				<p class="thetriad__elem__content">
+					<img src="http://placehold.it/640x640" alt="">
+				</p>
+			</div>
+		</div>
+
+		<div class="small-16 medium-5 large-4 large-push-2 end columns">
+			<div class="thetriad__elem">
+				<h3 class="thetriad__elem__title inversehead"><a href="#">Kiegészítők</a></h3>
+				<p class="thetriad__elem__content">
+					<img src="http://placehold.it/640x640" alt="">
+				</p>
+			</div>
+		</div>
+
 	</div>
 </section>
+
+<section class="home__blog">
+	<div class="row">
+		<div class="large-10 xlarge-8 xlarge-push-2 columns">
+			<section class="">
+					{% for post in site.posts %}
+						 {% include posttile.html %}
+					{% endfor %}
+			</section>
+		</div>
+		<div class="large-6 xlarge-4 xlarge-push-2 columns end">
+			<aside class="sidebar">
+				Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusantium dolor adipisci rem minima iure, maxime itaque mollitia ad ratione nobis, commodi dignissimos ea obcaecati officia est, recusandae tempore velit!
+			</aside>
+		</div>
+	</div>
+</section>
+

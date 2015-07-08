@@ -1,16 +1,16 @@
 .toprow__inner {
-	@include clearfix();
+	//@include clearfix();
 }
 
 .toprow__logoblock {
-	width:100%;
-	padding-right: 50%;
-	@include clearfix();
-	@media #{$xlarge-up} {
-		padding-right: 0;
-		width:14em;
-		float:left;
-	}
+	// width:100%;
+	// padding-right: 50%;
+	// @include clearfix();
+	// @media #{$large-up} {
+	// 	padding-right: 0;
+	// 	width:14em;
+	// 	float:left;
+	// }
 
 
 	a {
@@ -21,10 +21,10 @@
 }
 
 .toprow__mainnavigation {
-	@media #{$xlarge-up} {
-		width:calc(100% - 24em);
-		float:left;
-	}
+	// @media #{$large-up} {
+	// 	width:calc(100% - 24em);
+	// 	float:left;
+	// }
 	a {
 		text-decoration: none;
 		font-family: $suzukipro;
@@ -34,11 +34,11 @@
 
 .toprow__division {
 	background-color: $red;
-	@media #{$xlarge-up} {
-		width:10em;
-		float:right;
-		border-left: 5px solid #fff;
-	}
+	// @media #{$large-up} {
+	// 	width:10em;
+	// 	float:right;
+	// 	border-left: 5px solid #fff;
+	// }
 }
 
 
@@ -48,13 +48,16 @@
 	text-decoration: none;
 	font-size: .875em;
 	line-height: 1;
-	padding:1em 1.5em .875em;
+	padding:1em .5em .875em;
 	color:#fff;
 	font-family: $suzukipro;
 	font-weight: 400;
 	font-size: 1.125em;
 	line-height: 1;
 	text-transform: uppercase;
+	@media #{$large-up} {
+		border-left: 5px solid #fff;
+	}
 
 }
 
@@ -70,7 +73,7 @@
 		li {
 			margin:0;
 			padding:0;
-			@media #{$xlarge-up} {
+			@media #{$large-up} {
 				float:left;
 			}
 
@@ -85,11 +88,11 @@
 				
 
 				&:hover,&:focus {
-					background-color: $red;
+					background-color: $blue-dark;
 					//color: $blue-dark;
 				}
 
-				@media #{$xlarge-up} {
+				@media #{$large-up} {
 					text-align: center;
 				}
 			} 
@@ -107,7 +110,7 @@
 		li {
 			margin:0;
 			padding:0;
-			@media #{$xlarge-up} {
+			@media #{$large-up} {
 				float:left;
 			}
 
@@ -125,7 +128,7 @@
 					color: $blue-light;
 				}
 
-				@media #{$xlarge-up} {
+				@media #{$large-up} {
 					text-align: center;
 				}
 			} 
