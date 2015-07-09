@@ -16,9 +16,10 @@
 				<time class="post__time">{{ post.date | date_to_string }}</time>
 				<div class="post__content">
 					{{ post.excerpt }}
-				</div>
-				<a class="post__coverlink" href="{{ post.url }}"></a>
+				</div>				
 			</header>
+
 		</div>
+	<a class="post__bottomlink" href="{{ post.url }}">Bővebben &hellip;</a>
 	</div>
 </article>

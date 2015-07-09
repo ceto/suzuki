@@ -49,7 +49,7 @@ html {
 	line-height: 1;
 	font-weight: 700;
 	text-transform: uppercase;
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 		font-size: 2em;
 	}
 	a {
@@ -59,13 +59,7 @@ html {
 }
 
 .thetriad {
-	margin-top: -8em;
-	@media #{$medium-up} {
-		margin-top: -10em;
-	}
-	@media #{$medium-up} {
-		margin-top: -10em;
-	}
+
 }
 .thetriad__elem {
 	@include clearfix();

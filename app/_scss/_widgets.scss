@@ -1,8 +1,7 @@
 .widget {
 	@include clearfix();
-	background-color: $red;
+	background-color: #fff;
 	margin:1em auto;
-
 }
 
 .widget--sidebar {
@@ -23,6 +22,7 @@
 	@include clearfix();
 	font-size: .875em;
 	padding:1rem;
+	font-family: $suzukipro;
 
 	> *:first-child {
 		margin-top: 0;
@@ -31,6 +31,6 @@
 	> *:last-child {
 		margin-bottom: 0;
 	}
-
+	
 
 }

@@ -10,7 +10,7 @@
 
 .pageheader__text {
 	@include clearfix();
-	text-shadow:0 0 .125em $blue-dark;
+	text-shadow: 2px 4px 10px rgba(#000, 0.75);
 	margin:3em 0 7em;
 
 	@media #{$medium-up} {

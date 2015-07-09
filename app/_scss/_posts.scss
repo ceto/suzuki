@@ -37,7 +37,24 @@
 	}
 }
 
-
+.post__time {
+	margin:.5em 0 2em;
+	display: block;
+	color:$blue-dark;
+	font-size: .875em;
+	line-height: 1;
+	font-style: italic;
+	font-weight: 700;	
+}
+.post__bottomlink {
+	position: absolute;
+	bottom:.875rem;
+	left:1rem;
+	font-style: italic;
+	font-weight: 700;
+	font-size: .875em;
+	line-height: 1;
+}
 .post__content {
 	display: none;
 }

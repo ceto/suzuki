@@ -1,12 +1,24 @@
+body {
+	//background-color: $blue-dark;
+}
 .home__blog {
 	background-image: url('../img/bg_home.jpg');
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	//background-attachment: fixed;
 	background-size: auto 100vh;
+	margin:2em 0;
 }
 
-
+.thetriad--home {
+	margin-top: -8em;
+	@media #{$medium-up} {
+		margin-top: -10em;
+	}
+	@media #{$medium-up} {
+		margin-top: -10em;
+	}
+}
 .pageheader--home {
 	background-image: url('../img/hero_home.jpg');
 }
