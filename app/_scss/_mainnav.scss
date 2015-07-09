@@ -1,3 +1,6 @@
+.toprow {
+		background-color: #fff;
+}
 .toprow__inner {
 	//@include clearfix();
 }
@@ -25,6 +28,7 @@
 	// 	width:calc(100% - 24em);
 	// 	float:left;
 	// }
+
 	a {
 		text-decoration: none;
 		font-family: $suzukipro;
@@ -101,7 +105,7 @@
 }
 
 .prinav {
-	background-color: #fff;
+	//background-color: #fff;
 	ul {
 		@include clearfix();
 		margin:0;

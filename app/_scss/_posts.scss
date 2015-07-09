@@ -1,13 +1,40 @@
+.home__news__title {
+	display: block;
+	margin:0;
+}
 .post {
 	@include clearfix();
 	position: relative;
 	margin:1em 0;
+	background-color: #fff;
+	&:nth-of-type(2n+1) {
+		background-color: $gray-xlight;
+	}
+	&:hover {
+		//background-color: $gray-xlight;
+	}
 }
 .post__figure {
 	margin:0;
 }
 
 .post__header {
+	@include clearfix();
+	padding:.875rem 1rem;
+}
+
+.post__title {
+	margin:0;
+	font-size: 1.5em;
+	//line-height: 1.2;
+	// color:$blue-light;
+	// a {
+	// 	text-decoration: none;
+	// 	color: inherit;
+	// }
+	@media #{$large-up} {
+		font-size: 1.75em;
+	}
 }
 
 

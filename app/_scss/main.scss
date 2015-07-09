@@ -2,6 +2,7 @@
 @import "settings";
 @import "../_bower_components/foundation/scss/foundation/components/grid";
 @import "../_bower_components/foundation/scss/foundation/components/block-grid";
+@import "../_bower_components/foundation/scss/foundation/components/type";
 @import "../_bower_components/foundation/scss/foundation/components/visibility";
 @import "fonts";
 @import "mixins";
@@ -9,6 +10,7 @@
 @import "base";
 @import "mainnav";
 @import "header";
+@import "home";
 @import "posts";
 @import "footer";
 @import "widgets";

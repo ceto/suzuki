@@ -1,0 +1,36 @@
+.widget {
+	@include clearfix();
+	background-color: $red;
+	margin:1em auto;
+
+}
+
+.widget--sidebar {
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.widget__title {
+	display: block;
+	margin:0;
+}
+
+.widget__content {
+	@include clearfix();
+	font-size: .875em;
+	padding:1rem;
+
+	> *:first-child {
+		margin-top: 0;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+
+
+}

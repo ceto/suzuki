@@ -49,15 +49,37 @@ title: Suzuki Marine
 <section class="home__blog">
 	<div class="row">
 		<div class="large-10 xlarge-8 xlarge-push-2 columns">
-			<section class="">
-					{% for post in site.posts %}
+			<section class="home__news">
+					<div class="row">
+						<div class="small-16 columns">
+							<h3 class="home__news__title inversehead">Hírek</h3>
+						</div>
+					</div>
+					{% for post in site.posts limit:4 %}
 						 {% include posttile.html %}
 					{% endfor %}
 			</section>
 		</div>
 		<div class="large-6 xlarge-4 xlarge-push-2 columns end">
 			<aside class="sidebar">
-				Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusantium dolor adipisci rem minima iure, maxime itaque mollitia ad ratione nobis, commodi dignissimos ea obcaecati officia est, recusandae tempore velit!
+				<div class="widget widget--sidebar">
+					<h3 class="widget__title inversehead">Feliratkozás hírlevélre</h3>
+					<div class="widget__content">
+						<p>Amennyiben szeretne mindig naprakész információkkal rendelkezni híreinkről és legújabb akcióinkról, kérjük iratkozzon fel hírlevelünkre.</p>
+						<form action="#">
+							<label for="newsletter__email">Adja meg emailcímét</label>
+							<input name="newsletter__email" type="email" placeholder="Adja meg emailcímét">
+							<a href="#" class="btn">Feliratkozás</a>
+						</form>
+					</div>
+				</div>
+
+				<div class="widget sidebar__widget">
+					<div class="widget__content">
+						Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum accusantium dolor adipisci <strong>rem minima</strong> iure, maxime <a href="#">így néz ki egy link</a> itaque mollitia ad ratione nobis, commodi dignissimos ea <em>obcaecati officia</em> est, äđrecusandae tempore velicites
+					</div>
+				</div>
+
 			</aside>
 		</div>
 	</div>

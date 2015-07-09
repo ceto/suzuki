@@ -1,19 +1,35 @@
 .pageheader {
+	position: relative;
 	background-color: $gray-dark;
 	color:#fff;
+	background-repeat: no-repeat;
+	background-position: center top;	
+	background-attachment: local;
+	background-size: cover;
 }
 
 .pageheader__text {
 	@include clearfix();
 	text-shadow:0 0 .125em $blue-dark;
-	font-family: $suzukipro;
-	font-weight: 700;
-	margin:8em 0 12em;
-	line-height: 1.2;
+	margin:3em 0 7em;
+
+	@media #{$medium-up} {
+		margin:5em 0 10em;
+	}
+	@media #{$large-up} {
+		margin:6em 0 11em;
+	}
+
+	@media #{$xlarge-up} {
+		margin:10em 0 14em;
+	}
 
 	h1 {
-		
+		color:#fff;
+		font-family: $suzukipro;		
+		font-weight: 700;
 		font-size: 3em;
+		line-height: 1.2;
 		text-transform: uppercase;
 		margin: 0 0;
 		@media #{$xlarge-up} {
@@ -22,7 +38,10 @@
 
 	}
 	p {
+		font-family: $suzukipro;
 		font-size: 1.5em;
+		line-height: 1.2;
+		font-weight: 700;
 		margin: 0 0;
 		@media #{$xlarge-up} {
 			font-size: 2em;

@@ -1,9 +1,9 @@
 <article class="post post--tile post--{{ post.type }}">
-	<div class="row collapse">
+	<div class="row">
 		<div class="medium-6 medium-push-10 columns">
 			<figure class="post__figure">
 				<a href="{{ post.url }}">
-					<img src="http://lorempixel.com/640/480/sports" width="640" height="480" alt="{{ post.title }}">
+					<img src="{{ post.figure }}" width="640" height="640" alt="{{ post.title }}">
 				</a>
 			</figure>
 		</div>
@@ -19,7 +19,6 @@
 				</div>
 				<a class="post__coverlink" href="{{ post.url }}"></a>
 			</header>
-		<div class="medium-6 columns">
-	
+		</div>
 	</div>
 </article>

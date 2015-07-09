@@ -5,13 +5,14 @@ title:  "Business ligula porta felis euismod semper."
 date:	2014-04-10 17:14:02
 categories: [Capital, Power & Water, electronics, entertainment, industry, renewable energy]
 author:	GEforCEE staff
-notecount: 1 note
+figure: http://lorempixel.com/640/640/sports
+figcaption: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+notecount: 2 notes
 ---
-<figure><img src="http://lorempixel.com/768/640/business" width="768" height="640" alt="Lorem ipsum"></figure>
-
-<!--more-->
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit.
+
+<!--more-->
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
 
