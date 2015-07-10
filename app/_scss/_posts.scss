@@ -6,13 +6,7 @@
 	@include clearfix();
 	position: relative;
 	margin:1em 0;
-	background-color: #fff;
-	&:nth-of-type(2n+1) {
-		background-color: $gray-xlight;
-	}
-	&:hover {
-		//background-color: $gray-xlight;
-	}
+	background-color: $gray-light;
 }
 .post__figure {
 	margin:0;

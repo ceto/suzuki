@@ -1,0 +1,82 @@
+.pageheader--productlister {
+	background-image: url('../img/hero_motor.jpg');
+
+
+}
+
+.thetriad--productlister {
+	margin-top: -8em;
+	@media #{$medium-up} {
+		margin-top: -10em;
+	}
+	@media #{$medium-up} {
+		margin-top: -10em;
+	}
+}
+
+.productlister__darkrow {
+	background-color: $blue-dark;
+	@include clearfix();
+}
+.productlister__darkrow__logos {
+	margin:2em 0;
+}
+
+.productblock {
+	@include clearfix();
+	background-color: $gray-xlight;
+	border-bottom: 5px solid #fff;
+	padding:0 0 8em;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+.productblock--01 {
+// background-image: url('../img/bg1.jpg');
+}
+
+.productblock--02 {
+	background-image: url('../img/bg4.jpg');
+}
+.productblock--03 {
+	// background-image: url('../img/bg3.jpg');
+}
+
+.productblock__title {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height:1;
+	font-family: $suzukipro;
+	font-weight: 700;
+	margin:1em 0 .25em;
+	color:$blue-light;
+	@media #{$medium-up} {
+		font-size: 4em;
+	}
+	@media #{$large-up} {
+		font-size: 5em;
+	}
+	@media #{$xxlarge-up} {
+		font-size: 6em;
+	}
+}
+
+.productlist__elem {
+	//text-align: center;
+	.eleminner {
+		//background-color: #fff;
+		padding:2rem 1rem 0;
+	}
+}
+
+.productlist__elem__title {
+	font-size: 1.5em;
+	display: block;
+	margin-top: 1rem;
+	&:hover {
+		background-color: $blue-light;
+	}
+}

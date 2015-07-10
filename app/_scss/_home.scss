@@ -8,6 +8,7 @@ body {
 	//background-attachment: fixed;
 	background-size: auto 100vh;
 	margin:2em 0;
+	padding-bottom: 4em;
 }
 
 .thetriad--home {
@@ -21,4 +22,7 @@ body {
 }
 .pageheader--home {
 	background-image: url('../img/hero_home.jpg');
+	//background-position: center -1rem;
+	//background-size:cover;
+
 }

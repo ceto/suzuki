@@ -35,6 +35,9 @@
 		@media #{$xlarge-up} {
 			font-size: 5em;
 		}
+		@media #{$xxlarge-up} {
+			font-size: 8em;
+		}
 
 	}
 	p {
@@ -45,6 +48,9 @@
 		margin: 0 0;
 		@media #{$xlarge-up} {
 			font-size: 2em;
+		}
+		@media #{$xxlarge-up} {
+			font-size: 3em;
 		}
 	}
 

@@ -2,32 +2,140 @@
 		background-color: #fff;
 }
 .toprow__inner {
-	//@include clearfix();
+	@include clearfix();
+	@media #{$large-up} {
+		height:7rem;
+	}
 }
 
 .toprow__logoblock {
-	// width:100%;
-	// padding-right: 50%;
-	// @include clearfix();
-	// @media #{$large-up} {
-	// 	padding-right: 0;
-	// 	width:14em;
-	// 	float:left;
-	// }
+	width:100%;
+	width:7rem;
+	height:3.5rem;
+	@include clearfix();
+	@media #{$large-up} {
+		padding-right: 0;
+		width:14rem;
+		width:7rem;
+		float:left;
+	}
 
+	@media #{$xlarge-up} {
+		width:14rem;
+	}
 
 	a {
-		display: block;
 		float:left;
 		width:50%;
+		@media #{$large-up} {
+			width:100%;
+			&.toprow__wayoflifelogo {
+				display:none;
+			}
+		}
+		@media #{$xlarge-up} {
+			width:50%;
+			&.toprow__wayoflifelogo {
+				display:block;
+			}
+		}	
 	}	
 }
 
+.toprow__suzukilogo, .toprow__wayoflifelogo {
+	@include hide-text();
+	display: block;
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 3.5rem;
+	
+	@media #{$large-up} {
+		height:7rem;
+	}
+}
+
+.toprow__suzukilogo {
+	background-image: url('../img/logo_double.jpg');
+	background-position: 1px center;
+
+}
+
+.toprow__wayoflifelogo {
+	background-image: url('../img/logo_double.jpg');
+	background-position: right center;
+}
+
+
+
+.dontshow {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+	display: none;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.navtoggle {
+	position: absolute;
+	top:0;
+	right:0;
+	display: block;
+	font-size: 1em;
+	line-height: 3.5rem;
+	width: 3.5rem;
+	height:3.5rem;
+	//float:right;
+	background-color: $red;
+	color:#fff;
+	font-family: $suzukipro;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	&:hover, &:focus {
+		background-color: $red-dark;
+	}
+}
+
+input[type="checkbox"]#navtoggle {
+  &:checked + .siteheader__tohide {
+  	height: auto;
+		visibility:visible;
+		opacity:1;
+	}
+}
+
+
+
+.siteheader__tohide {
+	@include clearfix();
+	overflow: hidden;
+	height:0;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .2s ease-in;
+	@media #{$large-up} {
+		visibility:visible;
+		opacity:1;
+		height:auto;
+		width:calc(100% - 7rem);
+		float:left;
+	}
+	@media #{$xlarge-up} {
+		width:calc(100% - 14rem);
+	}
+}
+
 .toprow__mainnavigation {
-	// @media #{$large-up} {
-	// 	width:calc(100% - 24em);
-	// 	float:left;
-	// }
+	@include clearfix();
+	@media #{$large-up} {
+		width:calc(100% - 7rem);
+		float:left;
+	}
+	@media #{$xlarge-up} {
+		width:calc(100% - 9rem);
+	}
 
 	a {
 		text-decoration: none;
@@ -38,11 +146,14 @@
 
 .toprow__division {
 	background-color: $red;
-	// @media #{$large-up} {
-	// 	width:10em;
-	// 	float:right;
-	// 	border-left: 5px solid #fff;
-	// }
+	@media #{$large-up} {
+		width:7rem;
+		float:right;
+		border-left: 5px solid #fff;
+	}
+	@media #{$xlarge-up} {
+		width:9rem;
+	}
 }
 
 
@@ -60,7 +171,12 @@
 	line-height: 1;
 	text-transform: uppercase;
 	@media #{$large-up} {
-		border-left: 5px solid #fff;
+		
+	}
+	&:hover, &:focus {
+		text-decoration: none;
+		color:#fff;
+		background-color: $red-dark;
 	}
 
 }

@@ -44,7 +44,7 @@ html {
 
 	background-color: $blue-dark;
 	color:#fff;
-	padding:.875rem 1rem;
+	padding:.333em .5em;
 	font-size: 1.5em;
 	line-height: 1;
 	font-weight: 700;
@@ -72,9 +72,28 @@ html {
 
 .thetriad__elem__title {
 	margin: 0;
+	&:hover,&:focus {
+		background-color: $blue-light;
+	}
 }
 
 .thetriad__elem__content {
 	margin:0;
 }
 
+.thetriad__elem__link {
+	display: block;
+	position: relative;
+	&:hover, &:focus {
+		&:before {
+			content: '';
+			position: absolute;
+			top:0;right:0;bottom:0;left:0;
+			display: block;
+			background-color: rgba($blue-light,.75);
+		}
+	}
+	img {
+		display: block;
+	}
+}

@@ -1,0 +1,45 @@
+.sitefooter {
+	margin-top: 4em;
+	//background-color: $gray-light;
+	.row-felso {
+		background-color: $gray-light;
+	}
+}
+
+.footerlinks {
+	@include clearfix();
+	list-style-type: none;
+	margin:0 0;
+	padding:.5rem 0;
+	li {
+		display: inline-block;
+		padding:.125rem 1rem;
+		margin:0;
+		a {
+
+			text-transform: uppercase;
+			font-family: $suzukipro;
+			line-height: 1;
+			@media #{$xlarge-up} {
+			}
+		}
+	}
+}
+
+.footerlinks--right {
+	background-color: $gray-dark;
+	@media #{$xlarge-up} {
+		//text-align: right;
+	}
+
+	li {
+		a {
+			color:#fff;
+		}
+	}
+}
+
+.footerbottom {
+	padding:.5rem 0;
+	font-size: .875em;
+}
