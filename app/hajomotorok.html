@@ -1,11 +1,12 @@
 ---
 layout: default
 title: Suzuki Marine hajómotorok
+bodyclass: hajomotorok
 ---
 
 <header class="pageheader pageheader--productlister">
 	<div class="row">
-		<div class="small-16 medium-12 large-12 large-push-2 xlarge-10 columns">
+		<div class="small-12 large-10 large-centered columns">
 			<div class="pageheader__text">
 				<h1>Hajómotorok</h1>
 				<p>Consectetur adipisicing elit. Recusandae voluptate eum reiciendis quae temporibus. Lorem ipsum dolor sit amet.</p>
@@ -16,9 +17,11 @@ title: Suzuki Marine hajómotorok
 
 <section class="productlister__darkrow">
 	<section class="thetriad thetriad--productlister">
+	<div class="row">
+		<div class="columns small-12 large-10 large-centered">
 		<div class="row">
 
-			<div class="small-16 medium-5 large-4 large-push-2 columns">
+			<div class="small-12 medium-4 columns">
 				<div class="thetriad__elem">
 					<h3 class="thetriad__elem__title inversehead"><a href="#productblock--01">40 LE alatt</a></h3>
 					<p class="thetriad__elem__content">
@@ -29,7 +32,7 @@ title: Suzuki Marine hajómotorok
 				</div>
 			</div>
 
-			<div class="small-16 medium-5 large-4 large-push-2 columns">
+			<div class="small-12 medium-4 columns">
 				<div class="thetriad__elem">
 					<h3 class="thetriad__elem__title inversehead"><a href="#productblock--02">40 LE és felett</a></h3>
 					<p class="thetriad__elem__content">
@@ -40,7 +43,7 @@ title: Suzuki Marine hajómotorok
 				</div>
 			</div>
 
-			<div class="small-16 medium-5 large-4 large-push-2 end columns">
+			<div class="small-12 medium-4 columns">
 				<div class="thetriad__elem">
 					<h3 class="thetriad__elem__title inversehead"><a href="#productblock--03">Nagy tolóerejű</a></h3>
 					<p class="thetriad__elem__content">
@@ -52,14 +55,16 @@ title: Suzuki Marine hajómotorok
 			</div>
 
 		</div>
+		</div>
+		</div>
 	</section>
 	
 	<div class="productlister__darkrow__logos">
 		<div class="row">
-			<div class="columns small-16 medium-12 large-10 xlarge-8 medium-centered">
+			<div class="columns small-8 xlarge-6 small-centered">
 				<div class="row colapse">
-					<div class="columns small-12"><img src="/img/ultimate.png" alt=""></div>
-					<div class="columns small-4"><img src="/img/50th.png" alt=""></div>
+					<div class="columns small-9"><img src="/img/ultimate.png" alt=""></div>
+					<div class="columns small-3"><img src="/img/50th.png" alt=""></div>
 				</div>
 			</div>
 		</div>
@@ -69,14 +74,14 @@ title: Suzuki Marine hajómotorok
 
 <section id="productblock--01" class="productblock productblock--01">
 	<div class="row">
-		<div class="columns small-16 large-12 large-push-2">
+		<div class="columns large-10 large-centered">
 			<h2 class="productblock__title">40 LE alatti hajómotorok</h2>
 		</div>
 	</div>
 	<div class="row">
-		<div class="columns small-16 large-12 xxlarge-12 large-centered">
+		<div class="columns large-10 large-centered">
 			<ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
-				{% for i in (1..3) %}
+				{% for i in (1..2) %}
 					{% include productlist_elem.html %}
 				{% endfor %}
 			</ul>
@@ -86,30 +91,12 @@ title: Suzuki Marine hajómotorok
 
 <section id="productblock--02" class="productblock productblock--02">
 	<div class="row">
-		<div class="columns small-16 large-12 large-push-2">
+		<div class="columns large-10 large-centered">
 			<h2 class="productblock__title">40 LE és feletti hajómotorok</h2>
 		</div>
 	</div>
 	<div class="row">
-		<div class="columns small-16 large-12 xxlarge-12 large-centered">
-			<ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
-				{% for i in (1..4) %}
-					{% include productlist_elem.html %}
-				{% endfor %}
-			</ul>
-		</div>
-	</div>
-</section>
-
-
-<section id="productblock--03" class="productblock productblock--03">
-	<div class="row">
-		<div class="columns small-16 large-12 large-push-2">
-			<h2 class="productblock__title">Nagy tolóerejű hajómotorok</h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="columns small-16 large-12 xxlarge-12 large-centered">
+		<div class="columns large-10 large-centered">
 			<ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
 				{% for i in (1..2) %}
 					{% include productlist_elem.html %}
@@ -120,52 +107,76 @@ title: Suzuki Marine hajómotorok
 </section>
 
 
-
-
-
-<section class="">
+<section id="productblock--03" class="productblock productblock--03">
 	<div class="row">
-		<div class="large-10 xlarge-8 xlarge-push-2 columns">
-			<section class="home__news">
-					<div class="row">
-						<div class="small-16 columns">
-							<h3 class="home__news__title inversehead">Videótár</h3>
-						</div>
-					</div>
-					<br>
-					<div class="row">
-						<div class="small-8 columns">
-							<img src="img/triad/hajotest.jpg" alt="">
-						</div>
-						<div class="small-8 columns">
-							<img src="img/triad/tartozekok.jpg" alt="">
-						</div>
-					</div>
-					<br>
-			</section>
+		<div class="columns large-10 large-centered">
+			<h2 class="productblock__title">Nagy tolóerejű hajómotorok</h2>
 		</div>
-		<div class="large-6 xlarge-4 xlarge-push-2 columns end">
-			<aside class="sidebar">
+	</div>
+	<div class="row">
+		<div class="columns large-10 large-centered">
+			<ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+				{% for i in (1..1) %}
+					{% include productlist_elem.html %}
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
 
-				<div class="widget widget--sidebar">
-					<h3 class="widget__title inversehead">Feliratkozás hírlevélre</h3>
-					<div class="widget__content">
-						<p>Amennyiben szeretne mindig naprakész információkkal rendelkezni híreinkről és legújabb akcióinkról, kérjük iratkozzon fel hírlevelünkre.</p>
-						<form action="#">
-							<div class="formelemwrapper">
-								
-								<input name="newsletter__email" type="email" placeholder="Adja meg emailcímét">
-								<label for="newsletter__email">Adja meg emailcímét</label>
+
+
+
+
+<section class="related">
+	<div class="row">
+		<div class="columns xlarge-10 xlarge-centered">
+			<div class="row">
+				<div class="large-8 columns">
+					<section class="home__news">
+							<div class="row">
+								<div class="small-16 columns">
+									<h3 class="home__news__title inversehead">Videótár</h3>
+								</div>
 							</div>
-							<a href="#" class="btn">Feliratkozás</a>
-
-						</form>
-					</div>
+							<br>
+							<div class="row">
+								<div class="small-6 columns">
+									<img src="img/triad/hajotest.jpg" alt="">
+								</div>
+								<div class="small-6 columns">
+									<img src="img/triad/tartozekok.jpg" alt="">
+								</div>
+							</div>
+							<br>
+					</section>
 				</div>
 
+				<div class="large-4 columns end">
+					<aside class="sidebar">
 
-			</aside>
+						<div class="widget widget--sidebar">
+							<h3 class="widget__title inversehead">Feliratkozás hírlevélre</h3>
+							<div class="widget__content">
+								<p>Amennyiben szeretne mindig naprakész információkkal rendelkezni híreinkről és legújabb akcióinkról, kérjük iratkozzon fel hírlevelünkre.</p>
+								<form action="#">
+									<div class="formelemwrapper">
+										
+										<input name="newsletter__email" type="email" placeholder="Adja meg emailcímét">
+										<label for="newsletter__email">Adja meg emailcímét</label>
+									</div>
+									<a href="#" class="btn">Feliratkozás</a>
+
+								</form>
+							</div>
+						</div>
+
+
+					</aside>
+				</div>
+			</div>
 		</div>
+
 	</div>
 </section>
 

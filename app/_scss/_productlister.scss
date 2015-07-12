@@ -35,14 +35,14 @@
 }
 
 .productblock--01 {
-// background-image: url('../img/bg1.jpg');
+ background-image: url('../img/bg1.jpg');
 }
 
 .productblock--02 {
-	background-image: url('../img/bg4.jpg');
+	background-image: url('../img/bg3.jpg');
 }
 .productblock--03 {
-	// background-image: url('../img/bg3.jpg');
+	background-image: url('../img/bg4.jpg');
 }
 
 .productblock__title {
@@ -79,4 +79,9 @@
 	&:hover {
 		background-color: $blue-light;
 	}
+}
+
+.related {
+
+	padding:4em 0;
 }

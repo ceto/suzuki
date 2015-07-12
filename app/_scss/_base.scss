@@ -59,7 +59,7 @@ html {
 }
 
 .thetriad {
-
+	@include clearfix();
 }
 .thetriad__elem {
 	@include clearfix();

@@ -1,4 +1,5 @@
 .pageheader {
+	@include clearfix();
 	position: relative;
 	background-color: $gray-dark;
 	color:#fff;
@@ -46,6 +47,8 @@
 		line-height: 1.2;
 		font-weight: 700;
 		margin: 0 0;
+		max-width: 27em;
+
 		@media #{$xlarge-up} {
 			font-size: 2em;
 		}

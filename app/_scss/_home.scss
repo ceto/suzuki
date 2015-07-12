@@ -1,12 +1,15 @@
-body {
-	//background-color: $blue-dark;
-}
-.home__blog {
-	background-image: url('../img/bg_home.jpg');
+.home .main {
+	@include clearfix();
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	//background-attachment: fixed;
-	background-size: auto 100vh;
+	background-size: 50% auto;
+	background-attachment: fixed;
+	background-image: url('../img/bg_motor_light.jpg');
+}
+
+.home__blog {
+	
+
 	margin:2em 0;
 	padding-bottom: 4em;
 }
