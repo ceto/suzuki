@@ -16,29 +16,29 @@
 	@media #{$large-up} {
 		padding-right: 0;
 		width:14rem;
-		width:7rem;
+		height:7rem;
 		float:left;
 	}
 
-	@media #{$xlarge-up} {
-		width:14rem;
-	}
+	// @media #{$xlarge-up} {
+	// 	width:14rem;
+	// }
 
 	a {
 		float:left;
 		width:50%;
-		@media #{$large-up} {
-			width:100%;
-			&.toprow__wayoflifelogo {
-				display:none;
-			}
-		}
-		@media #{$xlarge-up} {
-			width:50%;
-			&.toprow__wayoflifelogo {
-				display:block;
-			}
-		}	
+		// @media #{$large-up} {
+		// 	width:100%;
+		// 	&.toprow__wayoflifelogo {
+		// 		display:none;
+		// 	}
+		// }
+		// @media #{$xlarge-up} {
+		// 	width:50%;
+		// 	&.toprow__wayoflifelogo {
+		// 		display:block;
+		// 	}
+		// }	
 	}	
 }
 
@@ -119,7 +119,7 @@ input[type="checkbox"]#navtoggle {
 		visibility:visible;
 		opacity:1;
 		height:auto;
-		width:calc(100% - 7rem);
+		width:calc(100% - 14rem);
 		float:left;
 	}
 	@media #{$xlarge-up} {
@@ -130,11 +130,8 @@ input[type="checkbox"]#navtoggle {
 .toprow__mainnavigation {
 	@include clearfix();
 	@media #{$large-up} {
-		width:calc(100% - 7rem);
+		width:100%;
 		float:left;
-	}
-	@media #{$xlarge-up} {
-		width:calc(100% - 9rem);
 	}
 
 	a {
@@ -164,6 +161,7 @@ input[type="checkbox"]#navtoggle {
 	font-size: .875em;
 	line-height: 1;
 	padding:1em .5em .875em;
+
 	color:#fff;
 	font-family: $suzukipro;
 	font-weight: 400;
@@ -171,7 +169,7 @@ input[type="checkbox"]#navtoggle {
 	line-height: 1;
 	text-transform: uppercase;
 	@media #{$large-up} {
-		
+		height:3.5rem
 	}
 	&:hover, &:focus {
 		text-decoration: none;
@@ -184,6 +182,10 @@ input[type="checkbox"]#navtoggle {
 .secnav {
 	@include clearfix();
 	background-color: $blue-light;
+	@media #{$large-up} {
+		height: 3.5rem;
+		overflow: hidden;
+	}
 
 	ul {
 		@include clearfix();
@@ -199,7 +201,7 @@ input[type="checkbox"]#navtoggle {
 
 			> a {
 				display: block;
-				padding:1em 1.5em .875em;
+				padding:1em .75em .75em;
 				color:#fff;
 				font-weight: 400;
 				font-size: 1.125em;
@@ -212,8 +214,22 @@ input[type="checkbox"]#navtoggle {
 					//color: $blue-dark;
 				}
 
+				@media #{$medium-up} {
+
+				}
+
 				@media #{$large-up} {
+					height: 3.5rem;
 					text-align: center;
+					font-size: .75em;
+					padding:1.875em 1.125em 1.25em;
+
+
+				}
+
+				@media #{$xlarge-up} {
+					font-size: 1em;
+					padding:1.333em 1em .875em;
 				}
 			} 
 		}
@@ -221,12 +237,23 @@ input[type="checkbox"]#navtoggle {
 }
 
 .prinav {
-	//background-color: #fff;
+	background-color: #fff;
+	//background-color: $blue-dark;
+	@media #{$large-up} {
+		width:calc(100% - 7rem);
+		float:left;
+		height: 3.5rem;
+		overflow: hidden;
+	}
+	@media #{$xlarge-up} {
+		width:calc(100% - 9rem);
+	}
 	ul {
 		@include clearfix();
 		margin:0;
 		padding:0;
 		list-style-type: none;
+
 		li {
 			margin:0;
 			padding:0;
@@ -236,7 +263,7 @@ input[type="checkbox"]#navtoggle {
 
 			> a {
 				display: block;
-				padding:.5em .75em .333em;
+				padding:.4em .5em .3333em;
 				color:$blue-dark;
 				font-weight: 700;
 				font-size: 2em;

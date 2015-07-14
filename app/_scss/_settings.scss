@@ -86,13 +86,13 @@ $column-gutter: rem-calc(30);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
-
+$suzukipro: "SuzukiPRO", sans-serif;
 // We use these to define default font stacks
-$font-family-sans-serif: "Oxygen", sans-serif;
+$font-family-sans-serif: $suzukipro;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 $oxygen: $font-family-sans-serif;
-$suzukipro: "SuzukiPRO", sans-serif;
+
 
 // We use these to define default font weights
 // $font-weight-normal: normal;
@@ -155,7 +155,7 @@ $body-font-color: $blue-dark;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 $small-breakpoint:  em-calc(480);
-$medium-breakpoint: em-calc(768);
+$medium-breakpoint: em-calc(900);
 $large-breakpoint:  em-calc(1140);
 $xlarge-breakpoint: em-calc(1600);
 

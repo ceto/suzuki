@@ -5,11 +5,11 @@
 }
 
 .thetriad--productlister {
-	margin-top: -8em;
+	margin-top: -6em;
 	@media #{$medium-up} {
-		margin-top: -10em;
+		margin-top: -6em;
 	}
-	@media #{$medium-up} {
+	@media #{$large-up} {
 		margin-top: -10em;
 	}
 }
