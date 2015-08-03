@@ -15,11 +15,12 @@
 }
 
 .productlister__darkrow {
-	background-color: $blue-dark;
+	//background-color: $blue-dark;
 	@include clearfix();
 }
-.productlister__darkrow__logos {
-	margin:2em 0;
+.ultimatelogos {
+	padding-top:4em;
+	padding-bottom: 4em;
 }
 
 .productblock {
@@ -50,7 +51,7 @@
 	font-size: 2.5em;
 	line-height:1;
 	font-family: $suzukipro;
-	font-weight: 700;
+	font-weight: 900;
 	margin:1em 0 .25em;
 	color:$blue-light;
 	@media #{$medium-up} {

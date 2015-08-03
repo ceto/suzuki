@@ -37,6 +37,48 @@ html {
 
 
 
+figure {
+	margin:0 0 rem-calc(20) 0;
+}
+
+figcaption {
+	font-size: .875em;
+	margin-top: .25em;
+	font-style: italic;
+}
+
+
+blockquote {
+	background-color: $gray-xlight;
+	padding:1em;
+}
+
+
+table {
+	width:100%;
+}
+
+tr:nth-of-type(2n) {
+	background-color: $blue-xlight;
+}
+td,th {
+	padding:.666em .75em;
+	line-height: 1.2;
+	span {
+		font-size: .875em;
+		font-weight: 900;
+		//display:inline-block;
+	}
+	.new {
+		color:$red;
+	}
+}
+th {
+	font-weight: 900;
+	text-align: left;
+}
+
+
 /********Typography******/
 .inversehead {
 	display: inline-block;
@@ -47,7 +89,7 @@ html {
 	padding:.333em .5em;
 	font-size: 1.5em;
 	line-height: 1;
-	font-weight: 700;
+	font-weight: 900;
 	text-transform: uppercase;
 	@media #{$xlarge-up} {
 		font-size: 2em;

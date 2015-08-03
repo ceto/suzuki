@@ -1,3 +1,7 @@
+.thesinglepost .pageheader {
+	background-image: url('../img/girl.jpg');
+}
+
 .home__news__title {
 	display: block;
 	margin:0;
@@ -5,49 +9,103 @@
 .post {
 	@include clearfix();
 	position: relative;
+}
+
+.post--tile {
 	margin:1em 0;
 	background-color: $gray-xlight;
 }
+
 .post__figure {
 	margin:0;
 }
 
 .post__header {
 	@include clearfix();
-	padding:.875rem 1rem;
+	.post--tile & {
+		padding:.875rem 1rem;
+	}
+	.post--single {
+		//padding:1em 0;
+	}
 }
 
 .post__title {
 	margin:0;
 	font-size: 1.5em;
-	//line-height: 1.2;
-	// color:$blue-light;
-	// a {
-	// 	text-decoration: none;
-	// 	color: inherit;
-	// }
 	@media #{$large-up} {
 		font-size: 1.75em;
 	}
+	
+	a {
+		color:$blue-light;
+		&:hover, &:focus {
+			color:$red-link;
+			text-decoration: none;
+		}
+	}
+
+	.post--single & {
+		font-size: 1.5em;
+		@media #{$large-up} {
+			font-size: 3.5em;
+		}
+	}
+
 }
 
 .post__time {
-	margin:.5em 0 2em;
+	margin:.5em 0 1em;
 	display: block;
 	color:$blue-dark;
 	font-size: .875em;
 	line-height: 1;
 	text-transform: uppercase;
-	font-weight: 700;	
+	font-weight: 900;	
 }
 .post__bottomlink {
 	position: absolute;
 	bottom:.875rem;
 	left:1rem;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: .875em;
 	line-height: 1;
+	color:$blue-light;
 }
 .post__content {
-	display: none;
+	//display: none;
+	margin-bottom: 2.5em;
+
+	.post--single & {
+		margin-top: 1rem;
+		> p:first-child {
+			font-weight: 700;
+			font-size: 1.25em;
+		}
+	}
+}
+
+
+/****** The Single Post Styles *****/
+
+.singlepost {
+	//margin-top: -4em;
+
+	.sidebar {
+		//margin-top: 2em;
+	}
+}
+
+.kiemel {
+	background-color: #fff;
+
+	padding-top:2em;
+	padding-bottom: 2em;
+	@media #{$large-up} {
+		//margin-top: -2em;
+	}
+}
+
+.post--single {
+	//padding:2em 0;	
 }

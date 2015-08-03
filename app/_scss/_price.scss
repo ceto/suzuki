@@ -1,0 +1,22 @@
+.priceblock__title {
+  text-transform: uppercase;
+}
+
+.table--pricelist {
+  td,th {
+    &:nth-child(2n) {
+      text-align: center;
+    }
+    &:last-child {
+      text-align: right;
+    }
+  }
+}
+
+.priceblock {
+  margin-bottom: 4em
+}
+.priceblock__footer {
+  margin: 3em 0 0;
+  font-size: .75em;
+}

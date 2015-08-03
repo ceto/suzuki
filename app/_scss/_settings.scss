@@ -214,11 +214,11 @@ $xlarge-breakpoint: em-calc(1600);
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
-$header-font-weight: 700;
+$header-font-weight: 900;
 // $header-font-style: normal;
-// $header-font-color: $jet;
-$header-line-height: 1.2;
-// $header-top-margin: .2rem;
+$header-font-color: $blue-dark;
+$header-line-height: 1;
+$header-top-margin: 1.5rem;
 // $header-bottom-margin: .5rem;
 // $header-text-rendering: optimizeLegibility;
 
@@ -272,9 +272,10 @@ $header-line-height: 1.2;
 
 // We use these to style anchors
 // $anchor-text-decoration: none;
-// $anchor-text-decoration-hover: none;
-$anchor-font-color: $blue-light;
+$anchor-text-decoration-hover: underline;
+$anchor-font-color: $red-link;
 //$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+$anchor-font-color-hover: $red-dark;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -297,9 +298,9 @@ $anchor-font-color: $blue-light;
 // $definition-list-margin-bottom: rem-calc(12);
 
 // We use these to style blockquotes
-// $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
+$blockquote-font-color: $gray-dark;
 // $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
+$blockquote-border: 0 solid $gray-light;
 // $blockquote-cite-font-size: rem-calc(13);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;

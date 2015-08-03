@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="medium-4 medium-push-8 columns">
 			<figure class="post__figure">
-				<a href="#">
+				<a href="{{ post.url }}">
 					<img src="http://placehold.it/640x480/003145" alt="{{ post.title }}">
 				</a>
 			</figure>
@@ -11,7 +11,7 @@
 		<div class="medium-8 medium-pull-4 columns">
 			<header class="post__header">
 				<h3 class="post__title">
-					<a href="#">{{ post.title }}</a>
+					<a href="{{ post.url }}">{{ post.title }}</a>
 				</h3>
 				<time class="post__time">{{ post.date | date_to_string }}</time>
 				<div class="post__content">
@@ -20,6 +20,6 @@
 			</header>
 
 		</div>
-	<a class="post__bottomlink" href="#">Bővebben &hellip;</a>
+	<a class="post__bottomlink" href="{{ post.url }}">Bővebben &hellip;</a>
 	</div>
 </article>

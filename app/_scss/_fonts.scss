@@ -47,17 +47,17 @@
   font-style: italic;
 }
 
-// @font-face {
-//   font-family: 'SuzukiPRO';
-//   src: url('../fonts/SuzukiPROBold.eot');
-//   src: url('../fonts/SuzukiPROBold.eot?#iefix') format('embedded-opentype'),
-//        url('../fonts/SuzukiPROBold.woff2') format('woff2'),
-//        url('../fonts/SuzukiPROBold.woff') format('woff'),
-//        url('../fonts/SuzukiPROBold.ttf') format('truetype'),
-//        url('../fonts/SuzukiPROBold.svg#SuzukiPROBold') format('svg');
-//   font-weight: 700;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: 'SuzukiPRO';
+  src: url('../fonts/SuzukiPROBold.eot');
+  src: url('../fonts/SuzukiPROBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/SuzukiPROBold.woff2') format('woff2'),
+       url('../fonts/SuzukiPROBold.woff') format('woff'),
+       url('../fonts/SuzukiPROBold.ttf') format('truetype'),
+       url('../fonts/SuzukiPROBold.svg#SuzukiPROBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'SuzukiPRO';
@@ -67,7 +67,7 @@
        url('../fonts/SuzukiPROHeadline.woff') format('woff'),
        url('../fonts/SuzukiPROHeadline.ttf') format('truetype'),
        url('../fonts/SuzukiPROHeadline.svg#SuzukiPROHeadline') format('svg');
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
 }
 

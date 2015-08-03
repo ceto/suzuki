@@ -4,16 +4,8 @@ title: Suzuki Marine
 bodyclass: home
 ---
 
-<header class="pageheader pageheader--home">
-	<div class="row">
-		<div class="small-12 large-10 small-centered columns">
-			<div class="pageheader__text">
-				<h1>It's all great!</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptate eum reiciendis quae temporibus.</p>
-			</div>
-		</div>
-	</div>
-</header>
+{% include pageheader.html %}
+
 <section class="thetriad thetriad--home">
 	<div class="row">
 		<div class="columns small-12 large-10 large-centered">
@@ -74,39 +66,7 @@ bodyclass: home
 				</section>
 				</div>
 				<div class="large-4 columns end">
-				<aside class="sidebar">
-
-				<div class="widget widget--sidebar">
-						<div class="widget__content">
-							<img src="/img/ultimate.png" alt="">
-						</div>
-					</div>
-
-					<div class="widget widget--sidebar">
-						<div class="widget__content">
-							<img src="/img/50th.png" alt="">
-						</div>
-					</div>
-
-
-					<div class="widget widget--sidebar">
-						<h3 class="widget__title inversehead">Feliratkozás hírlevélre</h3>
-						<div class="widget__content">
-							<p>Amennyiben szeretne mindig naprakész információkkal rendelkezni híreinkről és legújabb akcióinkról, kérjük iratkozzon fel hírlevelünkre.</p>
-							<form action="#">
-								<div class="formelemwrapper">
-									
-									<input name="newsletter__email" type="email" placeholder="Adja meg emailcímét">
-									<label for="newsletter__email">Adja meg emailcímét</label>
-								</div>
-								<a href="#" class="btn">Feliratkozás</a>
-
-							</form>
-						</div>
-					</div>
-
-
-				</aside>
+						{% include sidebar.html %}
 				</div>
 			</div>
 		</div>

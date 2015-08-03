@@ -8,9 +8,12 @@ $gray-dark: #9c9c9c;
 
 $red:#e01a22; // red
 $red-dark:saturate($red,10%);
+$red-link: #ff3000;
+
 
 $blue-light:#005aab;
 $blue-dark: #003145;
+$blue-xlight: rgba($blue-light,.0666);
 
 
 

@@ -1,0 +1,59 @@
+.thesingleproduct .pageheader {
+  background-image: url('../img/csajjalhajozas.jpg');
+}
+.singleproduct {
+  padding-bottom: 2em;
+}
+
+.product___content {
+
+}
+
+.table--productdata {
+  tr > td:last-child {
+    font-weight: 700;
+  }
+}
+
+.product__photo {
+  margin-top: 2em;
+  @media #{$medium-up} {
+    margin-top: 0;
+  }
+}
+
+.product__thumbs {
+  @include clearfix();
+  margin-top: 1em;
+  a {
+    border:1px solid $gray-light;
+    display:block;
+    width:22%;
+    float: left;
+    margin-right: 2%;
+    padding:1%;
+    &:hover,&:focus {
+      border-color: $blue-light;
+    }
+  }
+}
+
+.productlinks {
+  padding:4em 0;
+  background-color: $blue-dark;
+  color:#fff;
+  font-weight: 900;
+}
+.productlinks__link {
+  display: block;
+  padding:.5em 0;
+  font-size: 1.5em;
+  line-height: 1;
+  text-transform: uppercase;
+  color:#fff;
+  text-align: center;
+  &:hover, &:focus {
+    text-decoration: none;
+    color:$blue-light;
+  }
+}
