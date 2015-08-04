@@ -1,5 +1,28 @@
+.thepricetable .pageheader {
+  background-image: url('../img/girl.jpg');
+}
+
+
+.pricehead {
+  padding: 2em 0;
+}
+.pricehead__logos {
+  text-align: left;
+  margin-top: 1em;
+  img {
+  }
+  @media #{$medium-up} {
+    text-align: right;
+  }
+}
+.pricehead__title {
+  text-transform: uppercase;
+  margin-top:0;
+}
 .priceblock__title {
   text-transform: uppercase;
+  margin-bottom: rem-calc(20);
+  font-size: 2em;
 }
 
 .table--pricelist {
@@ -11,6 +34,12 @@
       text-align: right;
     }
   }
+  td {
+    font-weight: 700;
+  }
+  th {
+    font-weight: 400;
+  }
 }
 
 .priceblock {
@@ -19,4 +48,9 @@
 .priceblock__footer {
   margin: 3em 0 0;
   font-size: .75em;
+}
+
+.prices__inforow {
+  background-color: $gray-xlight;
+  padding:4em 0;
 }

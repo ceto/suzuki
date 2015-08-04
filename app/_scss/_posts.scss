@@ -96,16 +96,15 @@
 	}
 }
 
-.kiemel {
-	background-color: #fff;
-
+.singlepost__content {
 	padding-top:2em;
 	padding-bottom: 2em;
-	@media #{$large-up} {
-		//margin-top: -2em;
-	}
 }
 
+.singlepost__side {
+	padding-top:2em;
+	padding-bottom: 2em;
+}
 .post--single {
 	//padding:2em 0;	
 }

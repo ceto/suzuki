@@ -79,6 +79,27 @@ th {
 }
 
 
+dl {
+	margin:0 0 rem-calc(20) 0;
+	dt {
+  	display: inline-block;
+		min-width: 2em;
+		text-transform: uppercase;
+		&:after {
+			content:":";
+		}
+	}
+	dd {
+		display: inline;
+  	margin: 0;
+		&:after {
+			display: block;
+			content: '';
+		}
+	}
+}
+
+
 /********Typography******/
 .inversehead {
 	display: inline-block;
@@ -137,5 +158,15 @@ th {
 	}
 	img {
 		display: block;
+	}
+}
+
+
+.kiemel {
+	@include clearfix();
+	background-color: #fff;
+	//background-color: red;
+	@media #{$large-up} {
+		margin-top: -2em;
 	}
 }
