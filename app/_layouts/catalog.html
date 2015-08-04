@@ -1,0 +1,72 @@
+---
+layout: default
+bodyclass: thecataloges
+---
+{% include pageheader.html %} 
+
+
+
+<div class="row">
+  <div class="columns large-10 large-centered kiemel">
+    <nav class="tabnav">
+      <ul class="tabs" data-tab>
+        <li class="tab-title active"><a href="#panel1">Éves katalógusok</a></li>
+        <li class="tab-title"><a href="#panel2">Termékinformációs kiadványok</a></li>
+        <li class="tab-title"><a href="#panel3">Ruházat és kiegészítők</a></li>
+        <li class="tab-title"><a href="#panel4">Vállalati kiadványok</a></li>
+      </ul>
+    </nav>
+    <header class="cataloges__head">
+      <h1>Katalógusok</h1>
+      <p>A katalógusokban szereplő termékekkel kapcsolatos részletes információkért (elérhetőség, szállítási idő, specifikációk, ár, etc.) kérjük forduljon a hazai Suzuki Marine Márkakereskedőinkhez!</p>
+    </header>
+  </div>
+</div>
+
+  
+<section id="catalogblock--01" class="catalogblock catalogblock--01">
+  <div class="row">
+    <div class="columns large-10 large-centered">
+      <header class="catalogblock__head">
+        <h2 class="catalogblock__title">2015 évi katalógusok</h2>
+      </header>
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+        {% for i in (1..2) %}
+          {% include medialist_elem.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="catalogblock--01" class="catalogblock catalogblock--01">
+  <div class="row">
+    <div class="columns large-10 large-centered">
+      <header class="catalogblock__head">
+        <h2 class="catalogblock__title">2014 évi katalógusok</h2>
+      </header>
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+        {% for i in (1..1) %}
+          {% include medialist_elem.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="catalogblock--01" class="catalogblock catalogblock--01">
+  <div class="row">
+    <div class="columns large-10 large-centered">
+      <header class="catalogblock__head">
+        <h2 class="catalogblock__title">2013 évi katalógusok</h2>
+      </header>
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+        {% for i in (1..2) %}
+          {% include medialist_elem.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include horizultimate.html %} 

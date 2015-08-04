@@ -82,7 +82,7 @@ $include-xl-html-grid-classes: true;
 
 $row-width: rem-calc(1600);
 $total-columns: 12;
-$column-gutter: rem-calc(40);
+$column-gutter: rem-calc(50);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -129,7 +129,7 @@ $oxygen: $font-family-sans-serif;
 // We use these to control various global styles
 // $body-bg: $white;
 $body-font-color: $blue-dark;
-// $body-font-family: $font-family-sans-serif;
+$body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -213,7 +213,7 @@ $xlarge-breakpoint: em-calc(1600);
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: $body-font-family;
 $header-font-weight: 900;
 // $header-font-style: normal;
 $header-font-color: $blue-dark;
@@ -396,10 +396,10 @@ $include-html-block-grid-classes: $include-html-classes;
 $include-xl-html-block-grid-classes: true;
 
 // We use this to control the maximum number of block grid elements per row
-$block-grid-elements: 16;
-// $block-grid-default-spacing: rem-calc(20);
+$block-grid-elements: 12;
+$block-grid-default-spacing: rem-calc(25);
 
-// $align-block-grid-to-grid: false;
+//$align-block-grid-to-grid: false;
 // @if $align-block-grid-to-grid {$block-grid-default-spacing: $column-gutter;}
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
@@ -1341,14 +1341,14 @@ $block-grid-elements: 16;
 
 // $include-html-tabs-classes: $include-html-classes;
 
-// $tabs-navigation-padding: rem-calc(16);
-// $tabs-navigation-bg-color: $silver;
-// $tabs-navigation-active-bg-color: $white;
-// $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
-// $tabs-navigation-font-color: $jet;
-// $tabs-navigation-active-font-color: $tabs-navigation-font-color;
-// $tabs-navigation-font-size: rem-calc(16);
-// $tabs-navigation-font-family: $body-font-family;
+$tabs-navigation-padding: rem-calc(10);
+$tabs-navigation-bg-color: $blue-dark;
+$tabs-navigation-active-bg-color: $gray-dark;
+$tabs-navigation-hover-bg-color: $blue-light;
+$tabs-navigation-font-color: #fff;
+$tabs-navigation-active-font-color: $blue-dark;
+$tabs-navigation-font-size: rem-calc(20);
+$tabs-navigation-font-family: $header-font-family;
 
 // $tabs-content-margin-bottom: rem-calc(24);
 // $tabs-content-padding: ($column-gutter/2);

@@ -1,0 +1,24 @@
+/* overwrite default style */
+.tabs dd, .tabs .tab-title {
+
+  > a {
+    font-weight: 900;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+.tabnav {
+  margin-top: rem-calc(-52);
+  @media #{$xlarge-up} {
+    margin-left: rem-calc(-25);
+    // position: absolute;
+    // left:0;
+    // top:rem-calc(-52);
+  }
+}
