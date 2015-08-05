@@ -2,7 +2,76 @@
   background-image: url('../img/girl.jpg');
 }
 
+
+.dealers {
+  padding:2em 0 4em;
+}
 .mapsection {
   min-height: 33.333vh;
   background-color: $gray-dark;
+}
+
+
+.accordion {
+  margin: 2em 0;
+  padding:0; 
+
+  .accordion-navigation  {
+    display: block;
+    border-bottom: 1px solid #fff;
+    &:nth-child(2n+1) {
+      background-color: $blue-xlight;
+    }
+    > a {
+      position: relative;
+      z-index: 1;
+      padding:rem-calc(12) 0;
+      font-weight: 700;
+      line-height: 1;
+      
+      &:hover,&:focus {
+        text-decoration: none;
+      }
+      
+
+
+      span {
+        display: inline-block;
+        //float:left;
+        padding:rem-calc(4) rem-calc(16);
+
+        a {
+          color:$red-link;
+          padding:0;
+          display: inline;
+          z-index:2;
+        }
+      }
+    }
+  
+    .content {
+      *:first-child {
+        margin-top: 0;
+      }
+      h4 {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+.dealer__name {
+  text-transform: uppercase;
+  min-width: 33.333%;
+  font-weight: 900;
+  font-size: 1.125em;
+  padding:rem-calc(3) rem-calc(14);
+
+}
+
+.dealer__open {
+  position: absolute;
+  right:0;
+  top:rem-calc(8);
+  color:$red-link;
 }
