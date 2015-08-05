@@ -141,42 +141,103 @@ input[type="checkbox"]#navtoggle {
 	}
 }
 
-.toprow__division {
-	background-color: $red;
+.toprow__langsel {
+	text-align: center;
 	@media #{$large-up} {
-		width:7rem;
-		float:right;
-		border-left: 5px solid #fff;
+		width:5rem;
+		float:left;
 	}
 	@media #{$xlarge-up} {
-		width:9rem;
+		//width:9rem;
+	}
+
+	a {
+		display: block;
+		padding:1.333em .75em .875em 0;
+		font-size: 1em;
+		line-height: 1;
+		color:$blue-light;
+		@media #{$large-up} {
+			height:3.5rem;
+			text-transform:uppercase;
+
+			
+		}
+		&:hover, &:focus {
+			color:$red-link;
+		}
 	}
 }
 
-
-.division__toggle {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	font-size: .875em;
-	line-height: 1;
-	padding:1em .5em .875em;
-
-	color:#fff;
+.toprow__division {
+	background-color: $red;
 	font-family: $suzukipro;
 	font-weight: 400;
 	font-size: 1.125em;
 	line-height: 1;
 	text-transform: uppercase;
 	@media #{$large-up} {
+		width:7.5rem;
+		float:right;
+		height:3.5rem;
+	}
+	@media #{$xlarge-up} {
+		width:9.5rem;
+	}
+}
+
+
+.division__toggle {
+	display: block;
+	text-decoration: none;
+	padding:1em .875em .875em;
+
+	color:#fff;
+
+	@media #{$large-up} {
 		height:3.5rem
 	}
-	&:hover, &:focus {
+	&:hover,&:focus {
 		text-decoration: none;
 		color:#fff;
 		background-color: $red-dark;
 	}
 
+	i {
+		float:right;
+	}
+
+}
+
+.division__morediv {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	height:0;
+	overflow: hidden;
+	&.is_shown {
+		height:auto;
+	}
+	@media #{$large-up} {
+		position: absolute;
+		z-index:1;
+		width:7.5rem;
+	}
+	@media #{$xlarge-up} {
+		width:9.5rem;
+	}
+
+	li {
+		a {
+			display: block;
+			padding:1em .875em .875em;
+			background-color: $red-dark;
+			color:#fff;
+			&:hover, &:focus {
+				background-color: $red;
+			}
+		}
+	}
 }
 
 .secnav {
@@ -240,13 +301,13 @@ input[type="checkbox"]#navtoggle {
 	background-color: #fff;
 	//background-color: $blue-dark;
 	@media #{$large-up} {
-		width:calc(100% - 7rem);
+		width:calc(100% - 12.5rem);
 		float:left;
 		height: 3.5rem;
 		overflow: hidden;
 	}
 	@media #{$xlarge-up} {
-		width:calc(100% - 9rem);
+		width:calc(100% - 14.5rem);
 	}
 	ul {
 		@include clearfix();

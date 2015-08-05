@@ -15,7 +15,7 @@
 
 .tabnav {
   margin-top: rem-calc(-52);
-  @media #{$xlarge-up} {
+  @media #{$large-up} {
     margin-left: rem-calc(-25);
     // position: absolute;
     // left:0;

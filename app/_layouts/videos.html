@@ -1,6 +1,6 @@
 ---
 layout: default
-bodyclass: thecataloges
+bodyclass: thevideos
 ---
 {% include pageheader.html %} 
 
@@ -10,59 +10,57 @@ bodyclass: thecataloges
   <div class="columns large-10 large-centered kiemel">
     <nav class="tabnav">
       <ul class="tabs" data-tab>
-        <li class="tab-title active"><a href="#panel1">Éves katalógusok</a></li>
-        <li class="tab-title"><a href="#panel2">Termékinformációs kiadványok</a></li>
-        <li class="tab-title"><a href="#panel3">Ruházat és kiegészítők</a></li>
-        <li class="tab-title"><a href="#panel4">Vállalati kiadványok</a></li>
+        <li class="tab-title active"><a href="#panel1">Videótár</a></li>
+        <li class="tab-title"><a href="#">Hirdetések</a></li>
       </ul>
     </nav>
-    <header class="cataloges__head">
-      <h1>Katalógusok</h1>
-      <p>A katalógusokban szereplő termékekkel kapcsolatos részletes információkért (elérhetőség, szállítási idő, specifikációk, ár, etc.) kérjük forduljon a hazai Suzuki Marine Márkakereskedőinkhez!</p>
+    <header class="videos__head">
+      <h1>Suzuki Marine Videók</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim delectus molestiae consequatur rerum reprehenderit ut, quia minus. Harum amet, molestias veniam a nobis totam qui quas, eos quasi, corporis aperiam!</p>
     </header>
   </div>
 </div>
 
   
-<section id="catalogblock--01" class="mediablock catalogblock--01">
+<section id="videoblock--01" class="mediablock videoblock--01">
   <div class="row">
     <div class="columns large-10 large-centered">
       <header class="mediablock__head">
-        <h2 class="mediablock__title">2015 évi katalógusok</h2>
+        <h2 class="mediablock__title">Videók 2015</h2>
       </header>
       <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
         {% for i in (1..2) %}
-          {% include medialist_elem.html %}
+          {% include medialist_videoelem.html %}
         {% endfor %}
       </ul>
     </div>
   </div>
 </section>
 
-<section id="catalogblock--01" class="mediablock catalogblock--01">
+<section id="videoblock--01" class="mediablock videoblock--01">
   <div class="row">
     <div class="columns large-10 large-centered">
       <header class="mediablock__head">
-        <h2 class="mediablock__title">2014 évi katalógusok</h2>
+        <h2 class="mediablock__title">Videók 2014</h2>
       </header>
       <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
         {% for i in (1..1) %}
-          {% include medialist_elem.html %}
+          {% include medialist_videoelem.html %}
         {% endfor %}
       </ul>
     </div>
   </div>
 </section>
 
-<section id="catalogblock--01" class="mediablock catalogblock--01">
+<section id="videoblock--01" class="mediablock videoblock--01">
   <div class="row">
     <div class="columns large-10 large-centered">
       <header class="mediablock__head">
-        <h2 class="mediablock__title">2013 évi katalógusok</h2>
+        <h2 class="mediablock__title">Videók 2013</h2>
       </header>
       <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
         {% for i in (1..2) %}
-          {% include medialist_elem.html %}
+          {% include medialist_videoelem.html %}
         {% endfor %}
       </ul>
     </div>
