@@ -21,9 +21,15 @@
 
 .product__photo {
   margin-top: 2em;
+  position: relative;
   @media #{$medium-up} {
     margin-top: 0;
   }
+}
+
+.product__photo__imglink {
+  position: relative;
+  display: block;
 }
 
 .product__thumbs {
@@ -61,3 +67,23 @@
     color:$blue-light;
   }
 }
+
+.productlabel {
+  @include hide-text();
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+  position: absolute;
+
+}
+
+.productlabel--leanburn {
+  background-image: url('../img/lb.png');
+  width:7em;
+  height:2em;
+  bottom:.5em;
+  left:.5em;
+}
+
+

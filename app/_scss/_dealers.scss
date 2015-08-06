@@ -72,6 +72,8 @@
 .dealer__open {
   position: absolute;
   right:0;
-  top:rem-calc(8);
+  top:rem-calc(4);
   color:$red-link;
+  font-size: 2em;
+  font-weight: 400;
 }

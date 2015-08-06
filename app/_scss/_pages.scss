@@ -1,0 +1,35 @@
+.thesinglepage .pageheader {
+	background-image: url('../img/girl.jpg');
+}
+
+
+.page__header {
+	@include clearfix();
+	padding: 2em 0 0;
+}
+
+
+.page__title {
+	font-size: 1.5em;
+	margin:0 0 2rem;
+	text-transform: uppercase; 
+	@media #{$large-up} {
+		font-size: 3em;
+	}
+}
+
+.lead, .lead > * {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+
+.page__content {
+	padding-bottom: 6em;
+}
+
+.page__side {
+	padding-top:2em;
+	padding-bottom: 2em;
+}
+
