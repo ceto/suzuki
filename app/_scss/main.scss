@@ -1,11 +1,14 @@
 @import "bits";
 @import "settings";
+@import "../_bower_components/foundation/scss/normalize.scss";
 @import "../_bower_components/foundation/scss/foundation/components/grid";
 @import "../_bower_components/foundation/scss/foundation/components/block-grid";
 @import "../_bower_components/foundation/scss/foundation/components/type";
 @import "../_bower_components/foundation/scss/foundation/components/visibility";
 @import "../_bower_components/foundation/scss/foundation/components/tabs";
 @import "../_bower_components/foundation/scss/foundation/components/accordion";
+@import "../_bower_components/foundation/scss/foundation/components/forms";
+@import "../_bower_components/foundation/scss/foundation/components/buttons";
 @import "fonts";
 @import "mixins";
 @import "grid";
@@ -22,6 +25,7 @@
 @import "catalog";
 @import "video";
 @import "dealers";
+@import "newsletter";
 @import "mediablock";
 @import "form";
 @import "footer";

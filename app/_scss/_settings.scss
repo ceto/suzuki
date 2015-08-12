@@ -82,7 +82,7 @@ $include-xl-html-grid-classes: true;
 
 $row-width: rem-calc(1600);
 $total-columns: 12;
-$column-gutter: rem-calc(50);
+$column-gutter: rem-calc(40);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -246,8 +246,8 @@ $header-top-margin: 1.5rem;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
-// $small-font-size: 60%;
-// $small-font-color: scale-color($header-font-color, $lightness: 35%);
+$small-font-size: 50%;
+$small-font-color: inherit;
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
@@ -338,14 +338,14 @@ $blockquote-border: 0 solid $gray-light;
 
 // $accordion-navigation-padding: rem-calc(16);
 $accordion-navigation-bg-color: transparent;
-$accordion-navigation-hover-bg-color: $blue;
-$accordion-navigation-active-bg-color: $blue;
+$accordion-navigation-hover-bg-color: $gray-light;
+$accordion-navigation-active-bg-color: $blue-xlight;
 $accordion-navigation-font-color: $blue-dark;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
 $accordion-content-padding: rem-calc(16);
-$accordion-content-active-bg-color: $blue;
+$accordion-content-active-bg-color: $blue-xlight;
 
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -459,7 +459,7 @@ $block-grid-default-spacing: rem-calc(25);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
 // $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
+$button-font-weight: 900;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -468,8 +468,8 @@ $block-grid-default-spacing: rem-calc(25);
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+$button-bg-color: $blue-light;
+$button-bg-hover: $red;
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
@@ -638,29 +638,29 @@ $block-grid-default-spacing: rem-calc(25);
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: rem-calc(16);
+$form-spacing: rem-calc(24);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: $font-weight-normal;
-// $form-label-line-height: 1.5;
-// $form-label-font-color: scale-color($black, $lightness: 30%);
+$form-label-line-height: 1.75;
+$form-label-font-color: $blue-dark;
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
-// $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: rem-calc(14);
-// $input-bg-color: $white;
-// $input-focus-bg-color: scale-color($white, $lightness: -2%);
-// $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-font-color: $gray-xdark;
+$input-font-size: rem-calc(16);
+$input-bg-color: $white-input;
+$input-focus-bg-color: $gray-xlight;
+$input-border-color: $gray-xlight;
+$input-focus-border-color: $blue-light;
 // $input-border-style: solid;
-// $input-border-width: 1px;
+$input-border-width: 2px;
 // $input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-box-shadow: inset 0 1px 2px rgba($blue-dark, 0.1);
 // $input-include-glowing-effect: false;
 
 // We use these to style the fieldset border and spacing.
@@ -689,13 +689,13 @@ $block-grid-default-spacing: rem-calc(25);
 
 // We use these to style the error states for inputs and labels
 // $input-error-message-padding: rem-calc(6 9 9);
-// $input-error-message-top: -1px;
+$input-error-message-top: 0;
 // $input-error-message-font-size: rem-calc(12);
-// $input-error-message-font-weight: $font-weight-normal;
-// $input-error-message-font-style: italic;
-// $input-error-message-font-color: $white;
-// $input-error-message-bg-color: $alert-color;
-// $input-error-message-font-color-alt: $oil;
+//$input-error-message-font-weight: 700;
+$input-error-message-font-style: normal;
+$input-error-message-font-color: $red-link;
+$input-error-message-bg-color: transparent;
+$input-error-message-font-color-alt: $red-link;
 
 // We use this to style the glowing effect of inputs when focused
 // $glowing-effect-fade-time: .45s;

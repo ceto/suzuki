@@ -293,6 +293,11 @@ input[type="checkbox"]#navtoggle {
 					padding:1.333em 1em .875em;
 				}
 			} 
+			
+			&.active > a {
+				color: $blue-dark;
+			}
+
 		}
 	}
 }
@@ -340,6 +345,11 @@ input[type="checkbox"]#navtoggle {
 					text-align: center;
 				}
 			} 
+			
+			&.active > a {
+				color: $blue-light;
+			}
+
 		}
 	}
 }

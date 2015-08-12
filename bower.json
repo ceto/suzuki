@@ -1,10 +1,34 @@
 {
   "name": "suzuki",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "dependencies": {
-    "normalize-css": "~3.0.1",
     "jquery": "~2.1.4",
     "modernizr": "~2.8.3",
-    "foundation": "~5.5.2"
+    "foundation": "~5.5.2",
+    "jquery.localScroll": "~1.4.0",
+    "jquery.scrollTo": "~2.1.1",
+    "OwlCarousel": "https://github.com/OwlFonk/OwlCarousel.git#~1.3.2",
+    "magnific-popup": "https://github.com/dimsemenov/Magnific-Popup.git#~1.0.0"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": "./modernizr.js"
+    },
+    "jquery.scrollTo": {
+      "main": "./jquery.scrollTo.js"
+    },
+    "jquery.localScroll": {
+      "main": "./jquery.localScroll.js"
+    },
+    "OwlCarousel": {
+      "main": [
+        "./owl-carousel/owl.carousel.css",
+        "./owl-carousel/owl.theme.css",
+        "./owl-carousel/owl.transitions.css",
+        "./owl-carousel/owl.carousel.js",
+        "./owl-carousel/grabbing.png",
+        "./owl-carousel/AjaxLoader.gif"
+      ]
+    }
   }
 }

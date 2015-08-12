@@ -1,7 +1,7 @@
 .pageheader {
 	@include clearfix();
 	position: relative;
-	background-color: $gray-dark;
+	background-color: $blue-dark;
 	color:#fff;
 	background-repeat: no-repeat;
 	background-position: center top;	
@@ -67,4 +67,39 @@
 	}
 
 
+}
+
+
+
+/****slider ***/
+.owl-controls {
+	z-index: 1;
+	position: absolute;
+	left:0;
+	width:100%;
+	bottom:22%;
+	.owl-pagination {
+
+	}
+}
+
+
+
+/**** Main Header */
+
+
+
+.mainhead {
+  padding: rem-calc(32) 0;
+}
+.mainhead__discl {
+  margin-top: rem-calc(20);
+  //font-weight: 700;
+  //font-size: rem-calc(20);
+}
+
+.mainhead__title {
+  text-transform: uppercase;
+  margin-top:0;
+  font-size: rem-calc(48);
 }

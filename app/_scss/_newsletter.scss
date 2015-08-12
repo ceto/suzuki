@@ -1,0 +1,16 @@
+.newsletter__selectp {
+  @media #{$large-up} {
+    max-width: none;
+    margin:2em 0;
+  }
+}
+
+.submitarea {
+  text-align: center;
+  margin:2em 0 1em;
+}
+
+.newsletter__discl {
+  font-size: rem-calc(14);
+  margin-bottom: 6em;
+}

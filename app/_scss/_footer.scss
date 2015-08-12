@@ -17,7 +17,7 @@
 
 		margin:0;
 		padding:0;
-		a {
+		> a {
 			display: inline-block;
 			padding:1rem 1rem .75rem 1rem;
 			text-transform: uppercase;
@@ -33,6 +33,11 @@
 				border-bottom: 2px solid currentColor;
 			}
 		}
+
+		&.active > a {
+			color:$red-link;
+			border-bottom: 2px solid currentColor;
+		}
 	}
 }
 
@@ -43,7 +48,7 @@
 	}
 
 	li {
-		a {
+		> a {
 			&:hover, &:focus {
 				color:$red;
 			}

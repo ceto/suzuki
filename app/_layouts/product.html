@@ -14,7 +14,7 @@ bodyclass: thesingleproduct
         <ul class="tabs" data-tab>
           <li class="tab-title active"><a href="#panel1">Műszaki adatok</a></li>
           <li class="tab-title"><a href="#panel2">Háttérképek</a></li>
-          <li class="tab-title"><a href="#panel3">Hasonló termékek</a></li>
+          <li class="tab-title"><a href="#relatedproductblock" class="local-scroll">Hasonló termékek</a></li>
         </ul>
       </nav>
 			<div class="product product--{{ page.type }} product--single ">
@@ -43,16 +43,16 @@ bodyclass: thesingleproduct
 						</table>
 					</div>
 
-  				<div class="medium-5 large-6 columns end singleproduct__images">
+  				<div class="medium-5 large-6 columns end singleproduct__images zoom-gallery">
   					<figure class="product__photo">
-  						<a class="product__photo__imglink" href="/img/bg_home.jpg">
-                <img src="/img/bg_home.jpg" alt="">
+  						<a class="product__photo__imglink showingallery" title="{{ page.title }}" href="/img/bg_home.jpg">
+                <img src="/img/bg_home.jpg" alt="{{ page.title }}">
               </a>
               <span class="productlabel productlabel--leanburn">Lean Burn</span>
   					</figure>
   					<div class="product__thumbs">
-  						<a href="/img/bg_home.jpg"><img src="/img/bg_home.jpg" alt=""></a>
-  						<a href="/img/bg_home.jpg"><img src="/img/bg_home.jpg" alt=""></a>
+  						<a href="/img/bg_home.jpg" title="{{ page.title }}" class="showingallery"><img src="/img/bg_home.jpg" alt=""></a>
+  						<a href="/img/bg_home.jpg" title="{{ page.title }}" class="showingallery"><img src="/img/bg_home.jpg" alt=""></a>
   					</div>
   				</div>
 
@@ -85,7 +85,7 @@ bodyclass: thesingleproduct
 	</div>
 </section>
 
-<section id="productblock--01" class="productblock productblock--01">
+<section id="relatedproductblock" class="productblock productblock--01">
   <div class="row">
     <div class="columns large-10 large-centered">
       <h2 class="productblock__title">40 LE alatti hajómotorok</h2>

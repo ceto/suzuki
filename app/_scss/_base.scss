@@ -35,6 +35,35 @@ html {
 // 	}
 // }
 
+h1, h2, h3, h4, h5, h6 {
+	small {
+		display: block;
+		line-height: 1;
+		margin-top: rem-calc(4);
+		text-transform: none;
+	}
+}
+
+
+label {
+	small {
+		color:inherit;
+		font-size: 75%;
+	}
+}
+.error {
+	> label {
+		color:$red-link;
+		> small {
+			//color:$blue-dark;
+		}
+	}
+}
+input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+	&.error {
+		border-color: $red-link;
+	}
+}
 
 
 figure {
