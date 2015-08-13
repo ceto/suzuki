@@ -1,3 +1,4 @@
+
 .widget {
 	@include clearfix();
 	background-color: #fff;
@@ -27,4 +28,11 @@
 	}
 	
 
+}
+
+
+.sidebar {
+	@media print {
+		display: none;
+	}
 }

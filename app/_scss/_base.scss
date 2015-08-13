@@ -160,6 +160,10 @@ dl {
 	@media #{$large-up} {
 		margin-top:rem-calc(-120);
 	}
+
+	@media print {
+		display:none;
+	}
 }
 .thetriad__elem {
 	@include clearfix();

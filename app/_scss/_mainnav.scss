@@ -84,7 +84,8 @@
 	display: block;
 	font-size: 1em;
 	line-height: 3.5rem;
-	width: 3.5rem;
+	font-weight: 900;
+	width: 5.5rem;
 	height:3.5rem;
 	//float:right;
 	background-color: $red;
@@ -95,6 +96,10 @@
 	cursor: pointer;
 	&:hover, &:focus {
 		background-color: $red-dark;
+	}
+
+	i {
+		//display: inline-block;
 	}
 }
 
@@ -143,9 +148,16 @@ input[type="checkbox"]#navtoggle {
 
 .toprow__langsel {
 	text-align: center;
+
+	position: absolute;
+	top:0;
+	right:6rem;
+
+
 	@media #{$large-up} {
 		width:5rem;
 		float:left;
+		position: static;
 	}
 	@media #{$xlarge-up} {
 		//width:9rem;

@@ -75,6 +75,9 @@
 	.eleminner {
 		padding: 2rem 0 0;
 	}
+	@media print {
+		width:25%;
+	}
 }
 
 .productlist__elem__title {

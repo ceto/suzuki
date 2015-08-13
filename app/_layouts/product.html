@@ -31,7 +31,7 @@ bodyclass: thesingleproduct
       	<div class="product product--{{ page.type }} product--single ">
           <div class="row">
       			
-            <div class="columns medium-7 large-6 singleproduct__content">
+            <div class="columns medium-7 large-6 singleproduct__content print-6">
       		   <table class="table table--productdata">
       					<tr><td>Csizmahossz</td><td>S:381 L:508</td></tr>
       					<tr><td>Indítás módja</td><td>manuális</td></tr>
@@ -54,7 +54,7 @@ bodyclass: thesingleproduct
       				</table>
       			</div>
 
-      			<div class="medium-5 large-6 columns end singleproduct__images zoom-gallery">
+      			<div class="medium-5 large-6 columns end singleproduct__images zoom-gallery print-6">
       				<figure class="product__photo">
       					<a class="product__photo__imglink showingallery" title="{{ page.title }}" href="/img/bg_home.jpg">
                   <img src="/img/bg_home.jpg" alt="{{ page.title }}">
@@ -72,16 +72,22 @@ bodyclass: thesingleproduct
       	</div>
       </section>
       
-      
+
       <section id="panel2" class="content">
-        <header class="mainhead">
-          <h3 class="mainhead__title">
-            Lorem ipsum
-          </h3>
-        </header>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
+        <div class="row">
+          <div class="columns">
+            <header class="mainhead">
+              <h3 class="mainhead__title">
+                Letölthető háttérképek és katalógusok
+              </h3>
+            </header>
+            <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
+              {% for i in (1..2) %}
+                {% include medialist_elem.html %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id="panel3" class="content">
@@ -123,21 +129,21 @@ bodyclass: thesingleproduct
     </div>
   </div>
 
-<section class="productlinks">
+<section class="productlinks hide-for-print">
 	<div class="row">
     <div class="columns large-10 large-centered">
     	<div class="row">
     		<div class="columns medium-6 large-3">
-    			<a href="markakereskedok.html" class="productlinks__link">Márkakereskedők</a>
+    			<a href="markakereskedok.html" class="productlinks__link"><i class="icon icon--magnifying-glass"></i> Márkakereskedők</a>
     		</div>
     		<div class="columns medium-6 large-3">
-    			<a href="arak.html" class="productlinks__link">Árlista</a>
+    			<a href="arak.html" class="productlinks__link"><i class="icon icon--text-document"></i> Árlista</a>
     		</div>
     		<div class="columns medium-6 large-3">
-    			<a href="katalogus.html" class="productlinks__link">Katalógus</a>
+    			<a href="katalogus.html" class="productlinks__link"><i class="icon icon--map"></i> Katalógus</a>
     		</div>
     		<div class="columns medium-6 large-3">
-    			<a href="#" class="productlinks__link">Tartozékok</a>
+    			<a href="#" class="productlinks__link"><i class="icon icon--cog"></i> Tartozékok</a>
     		</div>
     	</div>
     </div>

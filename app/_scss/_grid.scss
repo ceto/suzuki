@@ -33,3 +33,10 @@
     }
   }
 }
+
+.print-6 {
+  @media print {
+    width:50%;
+    //float:left;
+  }
+}
