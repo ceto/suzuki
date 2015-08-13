@@ -1,4 +1,4 @@
-.home .main {
+.thehome .main {
 	@include clearfix();
 	background-repeat: no-repeat;
 	background-position: right bottom;
@@ -17,15 +17,15 @@
 }
 
 .thetriad--home {
-	margin-top: -6em;
-	@media #{$medium-up} {
-		margin-top: -6em;
-	}
-	@media #{$large-up} {
-		margin-top: -10em;
-	}
+	//margin-top: -6em;
+	// @media #{$medium-up} {
+	// 	margin-top: -2em;
+	// }
+	// @media #{$large-up} {
+	// 	margin-top: rem-calc(-48);
+	// }
 }
-.home .pageheader {
+.thehome .pageheader {
 	background-image: url('../img/hero_home.jpg');
 	//background-position: center -1rem;
 	//background-size:cover;

@@ -6,14 +6,20 @@ bodyclass: thevideos
 
 
 
-<div class="row">
-  <div class="columns large-10 large-centered kiemel">
+<div class="row fluidnarrow kiemel">
+  <div class="columns">
     <nav class="tabnav">
       <ul class="tabs" data-tab>
         <li class="tab-title active"><a href="#panel1">Videótár</a></li>
         <li class="tab-title"><a href="#">Hirdetések</a></li>
       </ul>
     </nav>
+  </div>
+</div>
+
+
+<div class="row fluidnarrow kiemel">
+  <div class="columns">
     <header class="mainhead">
       <h1 class="mainhead__title">Suzuki Marine Videók</h1>
       <p class="mainhead__discl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim delectus molestiae consequatur rerum reprehenderit ut, quia minus. Harum amet, molestias veniam a nobis totam qui quas, eos quasi, corporis aperiam!</p>
@@ -23,12 +29,12 @@ bodyclass: thevideos
 
   
 <section id="videoblock--01" class="mediablock videoblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <header class="mediablock__head">
         <h2 class="mediablock__title">Videók 2015</h2>
       </header>
-      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
         {% for i in (1..2) %}
           {% include medialist_videoelem.html %}
         {% endfor %}
@@ -38,12 +44,12 @@ bodyclass: thevideos
 </section>
 
 <section id="videoblock--01" class="mediablock videoblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <header class="mediablock__head">
         <h2 class="mediablock__title">Videók 2014</h2>
       </header>
-      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
         {% for i in (1..1) %}
           {% include medialist_videoelem.html %}
         {% endfor %}
@@ -53,12 +59,12 @@ bodyclass: thevideos
 </section>
 
 <section id="videoblock--01" class="mediablock videoblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <header class="mediablock__head">
         <h2 class="mediablock__title">Videók 2013</h2>
       </header>
-      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
         {% for i in (1..2) %}
           {% include medialist_videoelem.html %}
         {% endfor %}

@@ -83,7 +83,6 @@
 	margin-bottom: 2.5em;
 
 	.post--single & {
-		margin-top: 1rem;
 		> p:first-child {
 			font-weight: 700;
 			font-size: 1.25em;
@@ -103,12 +102,10 @@
 }
 
 .singlepost__content {
-	padding-top:2em;
-	padding-bottom: 2em;
 }
 
 .singlepost__side {
-	padding-top:2em;
+	padding-top:1em;
 	padding-bottom: 2em;
 }
 .post--single {

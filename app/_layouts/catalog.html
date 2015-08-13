@@ -6,8 +6,9 @@ bodyclass: thecataloges
 
 
 
-<div class="row">
-  <div class="columns large-10 large-centered kiemel">
+
+<div class="row fluidnarrow kiemel">
+  <div class="columns">
     <nav class="tabnav">
       <ul class="tabs" data-tab>
         <li class="tab-title active"><a href="#panel1">Éves katalógusok</a></li>
@@ -16,6 +17,12 @@ bodyclass: thecataloges
         <li class="tab-title"><a href="#panel4">Vállalati kiadványok</a></li>
       </ul>
     </nav>
+  </div>
+</div>
+
+
+<div class="row fluidnarrow kiemel">
+  <div class="columns">
     <header class="mainhead">
       <h1 class="mainhead__title">Katalógusok</h1>
       <p class="mainhead__discl">A katalógusokban szereplő termékekkel kapcsolatos részletes információkért (elérhetőség, szállítási idő, specifikációk, ár, etc.) kérjük forduljon a hazai Suzuki Marine Márkakereskedőinkhez!</p>
@@ -25,12 +32,12 @@ bodyclass: thecataloges
 
   
 <section id="catalogblock--01" class="mediablock catalogblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <header class="mediablock__head">
         <h2 class="mediablock__title">2015 évi katalógusok</h2>
       </header>
-      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
         {% for i in (1..2) %}
           {% include medialist_elem.html %}
         {% endfor %}
@@ -40,12 +47,12 @@ bodyclass: thecataloges
 </section>
 
 <section id="catalogblock--01" class="mediablock catalogblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <header class="mediablock__head">
         <h2 class="mediablock__title">2014 évi katalógusok</h2>
       </header>
-      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
         {% for i in (1..1) %}
           {% include medialist_elem.html %}
         {% endfor %}
@@ -55,12 +62,12 @@ bodyclass: thecataloges
 </section>
 
 <section id="catalogblock--01" class="mediablock catalogblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <header class="mediablock__head">
         <h2 class="mediablock__title">2013 évi katalógusok</h2>
       </header>
-      <ul class="medialist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+      <ul class="medialist small-block-grid-2 medium-block-grid-3 large-block-grid-3 xlarge-block-grid-4">
         {% for i in (1..2) %}
           {% include medialist_elem.html %}
         {% endfor %}

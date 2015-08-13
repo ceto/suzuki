@@ -1,75 +1,74 @@
 ---
 layout: default
 ---
-<header class="pageheader pageheader--productlister">
-  <div class="row large-collapse">
-    <div class="small-12 large-10 small-centered columns">
+<!-- <header class="pageheader pageheader--productlister">
+  <div class="row fluidnarrow">
+    <div class="large-10 columns">
       <div class="pageheader__text">
         <h1>Hajómotorok</h1>
         <p>Heading használata a headben. Recusandae voluptate eum reiciendis quae temporibus. Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
   </div>
-</header>
+</header> -->
 
-<section class="productlister__darkrow">
+{% include pageheaderslider.html %}
+
   <section class="thetriad thetriad--productlister local-scroll">
-  <div class="row">
-    <div class="columns small-12 large-10 large-centered noHorizPadding">
-    <div class="row">
+    <div class="row fluidnarrow">
+      <div class="columns">
+        <div class="row">
+          
+          <div class="medium-4 columns">
+            <div class="thetriad__elem">
+              <h3 class="thetriad__elem__title inversehead"><a href="#productblock--01">40 LE alatt</a></h3>
+              <p class="thetriad__elem__content">
+                <a class="thetriad__elem__link" href="#productblock--01">
+                  <img src="img/triad/hajomotor.jpg" alt="">
+                </a>
+              </p>
+            </div>
+          </div>
 
-      <div class="small-12 medium-4 columns">
-        <div class="thetriad__elem">
-          <h3 class="thetriad__elem__title inversehead"><a href="#productblock--01">40 LE alatt</a></h3>
-          <p class="thetriad__elem__content">
-            <a class="thetriad__elem__link" href="#productblock--01">
-              <img src="img/triad/hajomotor.jpg" alt="">
-            </a>
-          </p>
-        </div>
+          <div class="medium-4 columns">
+            <div class="thetriad__elem">
+              <h3 class="thetriad__elem__title inversehead">
+                <a href="#productblock--02">40 LE és felett</a>
+              </h3>
+              <p class="thetriad__elem__content">
+                <a class="thetriad__elem__link" href="#productblock--02">
+                  <img src="img/triad/hajomotor.jpg" alt="">
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="medium-4 columns">
+            <div class="thetriad__elem">
+              <h3 class="thetriad__elem__title inversehead"><a href="#productblock--03">Nagy tolóerejű</a></h3>
+              <p class="thetriad__elem__content">
+                <a class="thetriad__elem__link" href="#productblock--03">
+                  <img src="img/triad/hajomotor.jpg" alt="">
+                </a>
+              </p>
+            </div>
+          </div>
+
+          </div>
       </div>
-
-      <div class="small-12 medium-4 columns">
-        <div class="thetriad__elem">
-          <h3 class="thetriad__elem__title inversehead">
-            <a href="#productblock--02">40 LE és felett</a>
-          </h3>
-          <p class="thetriad__elem__content">
-            <a class="thetriad__elem__link" href="#productblock--02">
-              <img src="img/triad/hajomotor.jpg" alt="">
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="small-12 medium-4 columns">
-        <div class="thetriad__elem">
-          <h3 class="thetriad__elem__title inversehead"><a href="#productblock--03">Nagy tolóerejű</a></h3>
-          <p class="thetriad__elem__content">
-            <a class="thetriad__elem__link" href="#productblock--03">
-              <img src="img/triad/hajomotor.jpg" alt="">
-            </a>
-          </p>
-        </div>
-      </div>
-
-    </div>
-    </div>
     </div>
   </section>
   
   {% include horizultimate.html %} 
 
-</section>
 
 <section id="productblock--01" class="productblock productblock--01">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <h2 class="productblock__title">40 LE alatti hajómotorok</h2>
     </div>
-  </div>
-  <div class="row">
-    <div class="columns large-10 large-centered">
+
+    <div class="columns">
       <ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-4">
         {% for i in (1..2) %}
           {% include productlist_elem.html %}
@@ -80,13 +79,11 @@ layout: default
 </section>
 
 <section id="productblock--02" class="productblock productblock--02">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <h2 class="productblock__title">40 LE és feletti hajómotorok</h2>
     </div>
-  </div>
-  <div class="row">
-    <div class="columns large-10 large-centered">
+    <div class="columns">
       <ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-4">
         {% for i in (1..2) %}
           {% include productlist_elem.html %}
@@ -98,13 +95,11 @@ layout: default
 
 
 <section id="productblock--03" class="productblock productblock--03">
-  <div class="row">
-    <div class="columns large-10 large-centered">
+  <div class="row fluidnarrow">
+    <div class="columns">
       <h2 class="productblock__title">Nagy tolóerejű hajómotorok</h2>
     </div>
-  </div>
-  <div class="row">
-    <div class="columns large-10 large-centered">
+    <div class="columns">
       <ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-4">
         {% for i in (1..1) %}
           {% include productlist_elem.html %}

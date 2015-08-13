@@ -1,0 +1,35 @@
+.fluidnarrow {
+  @media #{$large-up} {
+    max-width:85%;
+  }
+  @media #{$xlarge-up} {
+    max-width:82%;
+  }
+  @media #{$xxlarge-up} {
+    max-width:70rem;
+  }
+}
+
+
+
+.kiemel {
+  @include clearfix();
+  position: relative;
+
+  @media #{$large-up} {
+    &:before {
+      position: absolute;
+      content:'';
+      left:0;
+      right:0;
+      width:100%;
+      top:rem-calc(-24);
+      height:rem-calc(24);
+      background-color: #fff;
+    }
+
+    > .columns, > *  {
+      margin-top: rem-calc(-24);
+    }
+  }
+}

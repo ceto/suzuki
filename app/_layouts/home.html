@@ -1,0 +1,64 @@
+---
+layout: default
+bodyclass: thehome
+---
+
+{% include pageheaderslider.html %}
+
+<section class="thetriad thetriad--home">
+	<div class="row fluidnarrow">
+		<div class="medium-4 columns">
+			<div class="thetriad__elem">
+				<h3 class="thetriad__elem__title inversehead"><a href="hajomotorok.html">Hajómotor</a></h3>
+				<p class="thetriad__elem__content">
+					<a class="thetriad__elem__link" href="hajomotorok.html">
+						<img src="img/triad/hajomotor.jpg" alt="">
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="medium-4 columns">
+			<div class="thetriad__elem">
+				<h3 class="thetriad__elem__title inversehead"><a href="hajomotorok.html">Hajótest</a></h3>
+				<p class="thetriad__elem__content">
+					<a class="thetriad__elem__link" href="hajomotorok.html">
+						<img src="img/triad/hajotest.jpg" alt="">
+					</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="medium-4 columns">
+			<div class="thetriad__elem">
+				<h3 class="thetriad__elem__title inversehead"><a href="hajomotorok.html">Kiegészítők</a></h3>
+				<p class="thetriad__elem__content">
+					<a class="thetriad__elem__link" href="hajomotorok.html">
+						<img src="img/triad/tartozekok.jpg" alt="">
+					</a>
+				</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section class="home__blog">
+	<div class="row fluidnarrow">
+		<div class="large-8 columns">
+			<section class="home__news">
+				<div class="row">
+					<div class="columns"><h3 class="home__news__title inversehead">Hírek</h3></div>
+				</div>
+				
+				{% for post in site.posts limit:4 %}
+					 {% include posttile.html %}
+				{% endfor %}
+			</section>
+		</div>
+		<div class="large-4 columns">
+				{% include sidebar.html %}
+		</div>
+	</div>
+</section>
+

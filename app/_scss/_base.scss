@@ -55,7 +55,7 @@ label {
 	> label {
 		color:$red-link;
 		> small {
-			//color:$blue-dark;
+			color:$blue-dark;
 		}
 	}
 }
@@ -152,6 +152,14 @@ dl {
 
 .thetriad {
 	@include clearfix();
+	margin-top:rem-calc(-80);
+
+	@media #{$medium-up} {
+		margin-top:rem-calc(-90);
+	}
+	@media #{$large-up} {
+		margin-top:rem-calc(-120);
+	}
 }
 .thetriad__elem {
 	@include clearfix();
@@ -191,15 +199,6 @@ dl {
 }
 
 
-.kiemel {
-	@include clearfix();
-	background-color: #fff;
-	//background-color: red;
-	@media #{$large-up} {
-		margin-top: -2.5em;
-	}
-}
-
 .fullWidth {
    width: 100%;
    margin-left: auto;
@@ -212,5 +211,11 @@ dl {
 	@media #{$large-up} {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
+	}
+}
+
+button.mfp-close {
+	&:hover,&:focus {
+		background-color: transparent;
 	}
 }

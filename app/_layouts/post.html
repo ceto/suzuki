@@ -8,32 +8,32 @@ bodyclass: thesinglepost
 
 
 <section class="singlepost">
-	<div class="row">
-		<div class="columns large-10 large-centered kiemel">
-    <nav class="tabnav">
-      <ul class="tabs" data-tab>
-        <li class="tab-title active"><a href="index.html">Hírek</a></li>
-      </ul>
-    </nav>
-			<div class="row">
-				<div class="columns large-8 singlepost__content">
-					<article class="post post--{{ page.type }} post--single ">
-						<header class="post__header">
-							<div class="post__meta">
-								<time class="post__meta__time">{{ page.date | date_to_string }}</time>
-							</div>
-							<h1 class="post__title">{{ page.title }}</h1>
-						</header>
-						<div class="post__content">
-							{{ content }}		
-						</div>
-					</article>
-				</div>
-				<div class="large-4 columns end singlepost__side">
-					{% include sidebar.html %}
-				</div>
-			</div>
-		</div>
+	<div class="row fluidnarrow kiemel">
+		<div class="columns">
+	    <nav class="tabnav">
+	      <ul class="tabs" data-tab>
+	        <li class="tab-title active"><a href="index.html">Hírek</a></li>
+	      </ul>
+	    </nav>
+	 	</div>
 	</div>
 
+	<div class="row fluidnarrow kiemel">
+		<div class="columns large-8 singlepost__content">
+			<article class="post post--{{ page.type }} post--single ">
+				<header class="mainhead">
+					<div class="mainhead__beforetitle">
+						<time class="post__meta__time">{{ page.date | date_to_string }}</time>
+					</div>
+					<h1 class="mainhead__title">{{ page.title }}</h1>
+				</header>
+				<div class="post__content">
+					{{ content }}		
+				</div>
+			</article>
+		</div>
+		<div class="large-4 columns end singlepost__side">
+			{% include sidebar.html %}
+		</div>
+	</div>
 </section>

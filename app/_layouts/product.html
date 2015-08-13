@@ -7,62 +7,121 @@ bodyclass: thesingleproduct
 {% include productheader.html %}
 
 
-<section class="singleproduct">
-	<div class="row">
-		<div class="columns large-10 large-centered kiemel">
+
+	<div class="row fluidnarrow kiemel">
+		<div class="columns">
       <nav class="tabnav">
         <ul class="tabs" data-tab>
           <li class="tab-title active"><a href="#panel1">Műszaki adatok</a></li>
           <li class="tab-title"><a href="#panel2">Háttérképek</a></li>
-          <li class="tab-title"><a href="#relatedproductblock" class="local-scroll">Hasonló termékek</a></li>
+          <li class="tab-title"><a href="#panel3">Tab test</a></li>
+          <li class="tab-title"><a href="#panel4">Hasonló termékek</a></li>
         </ul>
       </nav>
-			<div class="product product--{{ page.type }} product--single ">
+    </div>
+  </div>
+
+
+  <div class="row fluidnarrow kiemel">
+    <div class="columns">
+
+<div class="tabs-content">
+
+      <section id="panel1" class="singleproduct content active">
+      	<div class="product product--{{ page.type }} product--single ">
+          <div class="row">
+      			
+            <div class="columns medium-7 large-6 singleproduct__content">
+      		   <table class="table table--productdata">
+      					<tr><td>Csizmahossz</td><td>S:381 L:508</td></tr>
+      					<tr><td>Indítás módja</td><td>manuális</td></tr>
+      					<tr><td>Súly</td><td>S:25,0 L:26,0</td></tr>
+      					<tr><td>Vezérlés típusa</td><td>OHV 2 szeleppel</td></tr>
+      					<tr><td>Üzemanyagellátás</td><td>porlasztó</td></tr>
+      					<tr><td>Hengerek elrendezése/száma</td><td>álló, 1</td></tr>
+      					<tr><td>Hengerűrtartalom</td><td>138 cm<sup>3</sup></td></tr>
+      					<tr><td>Furat x Löket</td><td>62 x 46 mm</td></tr>
+      					<tr><td>Teljesítmény</td><td>3,7 kW</td></tr>
+      					<tr><td>Maximális fordulatszám</td><td>5.500 fordulat/perc</td></tr>
+      					<tr><td>Kormányzás</td><td>kormánykar</td></tr>
+      					<tr><td>Fojtás</td><td>manuális</td></tr>
+      					<tr><td>Oljaszükséglet</td><td>0,7 liter</td></tr>
+      					<tr><td>Üzemenyagtank kapacitása</td><td>1,5 l (beépített)</td></tr>
+      					<tr><td>Gyújtásrendszer</td><td>digitális CDI</td></tr>
+      					<tr><td>Generátor</td><td>12V 6A (op.)</td></tr>
+      					<tr><td>Motorálványzat</td><td>csapszeges</td></tr>
+      					<tr><td>Döntés módja</td><td>kézi emelőkaros</td></tr>
+      				</table>
+      			</div>
+
+      			<div class="medium-5 large-6 columns end singleproduct__images zoom-gallery">
+      				<figure class="product__photo">
+      					<a class="product__photo__imglink showingallery" title="{{ page.title }}" href="/img/bg_home.jpg">
+                  <img src="/img/bg_home.jpg" alt="{{ page.title }}">
+                </a>
+                <span class="productlabel productlabel--leanburn">Lean Burn</span>
+      				</figure>
+      				<div class="product__thumbs">
+      					<a href="/img/bg_home.jpg" title="{{ page.title }}" class="showingallery"><img src="/img/bg_home.jpg" alt=""></a>
+      					<a href="/img/bg_home.jpg" title="{{ page.title }}" class="showingallery"><img src="/img/bg_home.jpg" alt=""></a>
+                <a href="http://placehold.it/780x920" title="{{ page.title }}" class="showingallery"><img src="http://placehold.it/780x940" alt=""></a>
+      				</div>
+      			</div>
+
+          </div>
+      	</div>
+      </section>
+      
+      
+      <section id="panel2" class="content">
+        <header class="mainhead">
+          <h3 class="mainhead__title">
+            Lorem ipsum
+          </h3>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
+      </section>
+
+      <section id="panel3" class="content">
+        <header class="mainhead">
+          <h3 class="mainhead__title">
+            Valami ide kerül
+          </h3>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolor doloribus tempore eligendi nemo, necessitatibus expedita delectus eaque cum maxime, dignissimos qui doloremque quae perferendis consequatur libero, cupiditate labore alias?</p>
+      </section>
+
+
+      <section id="panel4" class="productblock content">
         <div class="row">
-  				
-          <div class="columns medium-7 large-6 singleproduct__content">
-				   <table class="table table--productdata">
-							<tr><td>Csizmahossz</td><td>S:381 L:508</td></tr>
-							<tr><td>Indítás módja</td><td>manuális</td></tr>
-							<tr><td>Súly</td><td>S:25,0 L:26,0</td></tr>
-							<tr><td>Vezérlés típusa</td><td>OHV 2 szeleppel</td></tr>
-							<tr><td>Üzemanyagellátás</td><td>porlasztó</td></tr>
-							<tr><td>Hengerek elrendezése/száma</td><td>álló, 1</td></tr>
-							<tr><td>Hengerűrtartalom</td><td>138 cm<sup>3</sup></td></tr>
-							<tr><td>Furat x Löket</td><td>62 x 46 mm</td></tr>
-							<tr><td>Teljesítmény</td><td>3,7 kW</td></tr>
-							<tr><td>Maximális fordulatszám</td><td>5.500 fordulat/perc</td></tr>
-							<tr><td>Kormányzás</td><td>kormánykar</td></tr>
-							<tr><td>Fojtás</td><td>manuális</td></tr>
-							<tr><td>Oljaszükséglet</td><td>0,7 liter</td></tr>
-							<tr><td>Üzemenyagtank kapacitása</td><td>1,5 l (beépített)</td></tr>
-							<tr><td>Gyújtásrendszer</td><td>digitális CDI</td></tr>
-							<tr><td>Generátor</td><td>12V 6A (op.)</td></tr>
-							<tr><td>Motorálványzat</td><td>csapszeges</td></tr>
-							<tr><td>Döntés módja</td><td>kézi emelőkaros</td></tr>
-						</table>
-					</div>
-
-  				<div class="medium-5 large-6 columns end singleproduct__images zoom-gallery">
-  					<figure class="product__photo">
-  						<a class="product__photo__imglink showingallery" title="{{ page.title }}" href="/img/bg_home.jpg">
-                <img src="/img/bg_home.jpg" alt="{{ page.title }}">
-              </a>
-              <span class="productlabel productlabel--leanburn">Lean Burn</span>
-  					</figure>
-  					<div class="product__thumbs">
-  						<a href="/img/bg_home.jpg" title="{{ page.title }}" class="showingallery"><img src="/img/bg_home.jpg" alt=""></a>
-  						<a href="/img/bg_home.jpg" title="{{ page.title }}" class="showingallery"><img src="/img/bg_home.jpg" alt=""></a>
-  					</div>
-  				</div>
-
+          <div class="columns">
+            <header class="mainhead">
+              <h3 class="mainhead__title">
+                40 LE alatti hajómotorok
+              </h3>
+            </header>
+          </div>
+          <div class="columns">
+            <ul class="productlist small-block-grid-2 medium-block-grid-3 xlarge-block-grid-4 xxlarge-block-grid-5">
+              {% for i in (1..2) %}
+                {% include productlist_elem.html %}
+              {% endfor %}
+            </ul>
+          </div>
         </div>
-			</div>
+      </section>
 
 
-		</div>
-	</div>
-</section>
+</div>
+
+
+
+
+
+    </div>
+  </div>
 
 <section class="productlinks">
 	<div class="row">
@@ -85,7 +144,7 @@ bodyclass: thesingleproduct
 	</div>
 </section>
 
-<section id="relatedproductblock" class="productblock productblock--01">
+<!-- <section id="relatedproductblock" class="productblock productblock--01">
   <div class="row">
     <div class="columns large-10 large-centered">
       <h2 class="productblock__title">40 LE alatti hajómotorok</h2>
@@ -100,9 +159,9 @@ bodyclass: thesingleproduct
       </ul>
     </div>
   </div>
-</section>
+</section> 
 
 {% include horizultimate.html %}
 
-
+-->
 

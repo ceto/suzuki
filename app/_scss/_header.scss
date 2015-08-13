@@ -15,22 +15,22 @@
 	margin:3em 0 6em;
 
 	@media #{$medium-up} {
-		margin:5em 0 6em;
+		margin:6em 0 10em;
 		.pageheader--narrow &{
 			margin:3em 0 6em;
 		}
 	}
 	@media #{$large-up} {
-		margin:6em 0 11em;
+		margin:7em 0 13em;
 		.pageheader--narrow &{
 			margin:3em 0 9em;
 		}
 	}
 
 	@media #{$xlarge-up} {
-		margin:10em 0 14em;
+		margin:8em 0 15em;
 		.pageheader--narrow &{
-			margin:3em 0 9em;
+			margin:4em 0 9em;
 		}
 	}
 
@@ -77,7 +77,14 @@
 	position: absolute;
 	left:0;
 	width:100%;
-	bottom:22%;
+	bottom:rem-calc(48);
+
+	@media #{$medium-up} {
+			bottom:rem-calc(80);
+		}
+	@media #{$large-up} {
+		bottom:23%;
+	}
 	.owl-pagination {
 
 	}
@@ -91,6 +98,9 @@
 
 .mainhead {
   padding: rem-calc(32) 0;
+	.kiemel & {
+		padding: rem-calc(48) 0 rem-calc(32) 0;
+	}
 }
 .mainhead__discl {
   margin-top: rem-calc(20);

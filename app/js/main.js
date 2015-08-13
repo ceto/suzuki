@@ -39,7 +39,7 @@ jQuery(document).ready(function() {
 
   $("#owl-demo").owlCarousel({
       autoPlay : 1500,
-      stopOnHover : true,
+      //stopOnHover : true,
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
@@ -57,7 +57,15 @@ jQuery(document).ready(function() {
   });
 
 
+  $('.videopopup, .popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
 
+    fixedContentPos: false
+  });
 
 
   $('.zoom-gallery').magnificPopup({
