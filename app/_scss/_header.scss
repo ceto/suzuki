@@ -12,8 +12,12 @@
 			display: none;
 		}
 	}
+
 }
 
+.pageheader--centered {
+	text-align: center;
+}
 
 .pageheader__text {
 	@include clearfix();
@@ -45,14 +49,14 @@
 		font-family: $suzukipro;		
 		font-weight: 900;
 		font-size: 3em;
-		line-height: 1.2;
+		line-height: 1;
 		text-transform: uppercase;
 		margin: 0 0;
 		@media #{$xlarge-up} {
 			font-size: 5em;
 		}
 		@media #{$xxlarge-up} {
-			font-size: 8em;
+			//font-size: 8em;
 		}
 
 	}
@@ -68,7 +72,11 @@
 			font-size: 2em;
 		}
 		@media #{$xxlarge-up} {
-			font-size: 3em;
+			//font-size: 3em;
+		}
+
+		& + p {
+			margin-top: 1em;
 		}
 	}
 
@@ -80,10 +88,8 @@
 /****slider ***/
 
 .owl-carousel {
-	@media print {
-			display: none;
-		}
 }
+
 .owl-controls {
 	z-index: 1;
 	position: absolute;

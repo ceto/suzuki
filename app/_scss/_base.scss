@@ -223,3 +223,10 @@ button.mfp-close {
 		background-color: transparent;
 	}
 }
+
+
+.button {
+	&:hover,&:focus {
+		text-decoration: none;
+	}		
+}

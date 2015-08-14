@@ -63,3 +63,37 @@
 		color:$blue-dark;
 	}
 }
+
+
+.tothetop {
+	position: fixed;
+	right:1rem;
+	bottom:1rem;
+	color:$blue-light;
+	line-height: 1;
+	span {
+		font-size: .75em;
+		display: none;
+		transform: translateY(-.875em);
+		text-shadow:1px 1px rgba(#fff,.5);
+	}
+	i {
+		background-color: rgba(#fff,.75);
+		border:1px solid $gray-xlight;
+		display: inline-block;
+		padding:.25em;
+		font-size: 2em;
+		margin-left: .25em;
+	}
+	&:hover, &:focus {
+		color:$red-link;
+		text-decoration: none;
+		span {
+			display: inline-block;
+		}
+		i {
+			background-color: rgba(#fff,.75);
+		}
+
+	}
+}
