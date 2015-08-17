@@ -243,10 +243,10 @@ input[type="checkbox"]#navtoggle {
 		a {
 			display: block;
 			padding:1em .875em .875em;
-			background-color: $red-dark;
+			background-color: rgba($red-dark,.666);
 			color:#fff;
 			&:hover, &:focus {
-				background-color: $red;
+				background-color: rgba($red-dark, 1);
 			}
 		}
 	}

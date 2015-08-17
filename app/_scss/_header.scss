@@ -56,7 +56,7 @@
 			font-size: 5em;
 		}
 		@media #{$xxlarge-up} {
-			//font-size: 8em;
+			font-size: 6em;
 		}
 
 	}
@@ -66,13 +66,12 @@
 		line-height: 1.2;
 		font-weight: 900;
 		margin: 0 0;
-		max-width: 27em;
 
 		@media #{$xlarge-up} {
 			font-size: 2em;
 		}
 		@media #{$xxlarge-up} {
-			//font-size: 3em;
+			font-size: 2.333em;
 		}
 
 		& + p {

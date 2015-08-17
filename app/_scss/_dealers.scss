@@ -60,21 +60,80 @@
   }
 }
 
+
+.panelhead {
+  position: relative;
+  padding:rem-calc(12) 0;
+  line-height: 1;
+  font-weight: 700;
+  &:hover, &:focus {
+    background-color: $gray-light;
+  }
+
+  span {
+    display: inline-block;
+    //float:left;
+    padding:rem-calc(4) rem-calc(16);
+
+    a {
+      color:$blue-dark;
+      padding:0;
+      display: inline;
+      z-index:2;
+      &:hover {
+        color: $blue-light;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .dealer__name {
   text-transform: uppercase;
   min-width: 33.333%;
   font-weight: 900;
   font-size: 1.125em;
   padding:rem-calc(3) rem-calc(14);
+  .togglepanel {
+    color:inherit !important;
+  }
 
 }
 
 .dealer__open {
   position: absolute;
   right:0;
-  top:rem-calc(4);
-  color:$red-link;
-  font-size: 2em;
-  font-weight: 400;
-  color:$blue;
+  top:rem-calc(8);
+  .togglepanel {
+
+    font-size: 1.666em;
+    font-weight: 400;
+    color:$blue-light;
+    &:hover {
+      text-decoration: none;
+      color:$red-link;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.togglepanel {
+    //color:inherit !important;
+    &:hover {
+      text-decoration: none;
+      color:inherit;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+.active .togglepanel {
+  i {
+    &:before {
+      content:"\e6e8";
+    }
+  }
 }

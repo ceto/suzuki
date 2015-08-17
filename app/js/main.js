@@ -15,6 +15,13 @@ $(document).foundation();
 // });
 
 
+$(".togglepanel").click( function(e) {
+    e.preventDefault();
+    $(this).closest('.accordion-navigation').toggleClass("active");
+    $(this).closest('.accordion-navigation').find('.content').toggleClass("active");
+    //return flase;
+});
+
 
 $('.local-scroll').localScroll({
     target: "body",
