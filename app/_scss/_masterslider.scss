@@ -45,7 +45,7 @@
 .ms-slide .ms-slide-loading {
 	width: 36px;
 	height: 36px;
-	background: url(../vendor/masterslider/style/loading-2.gif) no-repeat center white;
+	background: url(../img/loading-2.gif) no-repeat center white;
 	border-radius: 60px;
 	box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
 	position: absolute;
@@ -58,10 +58,10 @@
 
 /* grab cursor */
 .ms-def-cursor{cursor:auto !important;}
-.ms-grab-cursor{cursor: url("../vendor/masterslider/style/grab.png"), move;}
-.ms-grabbing-cursor{cursor: url("../vendor/masterslider/style/grabbing.png"), move;}
-.ms-ie .ms-grab-cursor{cursor: url("../vendor/masterslider/style/style/grab.cur"), move;}
-.ms-ie .ms-grabbing-cursor {cursor: url("../vendor/masterslider/style/grabbing.cur"), move;}
+.ms-grab-cursor{cursor: url("../img/grab.png"), move;}
+.ms-grabbing-cursor{cursor: url("../img/grabbing.png"), move;}
+.ms-ie .ms-grab-cursor{cursor: url("../img/grab.cur"), move;}
+.ms-ie .ms-grabbing-cursor {cursor: url("../img/grabbing.cur"), move;}
 
 .ms-view { 
 	margin:0px auto;
@@ -281,7 +281,7 @@
     font-family: sans-serif;
     font-size: 0.75em;
     display: inline-block;
-    background: url(../vendor/masterslider/style/video-close-btn.png) no-repeat 0px 3px;
+    background: url(../img/video-close-btn.png) no-repeat 0px 3px;
     padding-left: 15px;
     height: 15px;
     color: #DBDBDB;
@@ -336,9 +336,9 @@
 .ms-thumb-frame{
 	padding:0 0 0 0;
 	cursor: move;
-	cursor: url("../vendor/masterslider/style/grab.png"), move;
+	cursor: url("../img/grab.png"), move;
 	.ms-ie & {
-		cursor: url("../vendor/masterslider/style/style/grab.cur"), move;
+		cursor: url("../img/grab.cur"), move;
 	}
 	float: left;
 	overflow: hidden;
