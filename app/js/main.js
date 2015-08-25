@@ -87,7 +87,7 @@ jQuery(document).ready(function() {
         autoplay:true,
         fullwidth:true,
         autoHeight:true,
-        view:"fade",
+        view:"fade"
         //grabCursor:true,
         //mouse:true,
         //swipe:false
