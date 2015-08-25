@@ -338,14 +338,14 @@ $blockquote-border: 0 solid $gray-light;
 
 // $accordion-navigation-padding: rem-calc(16);
 $accordion-navigation-bg-color: transparent;
-$accordion-navigation-hover-bg-color: $gray-light;
+$accordion-navigation-hover-bg-color: $blue-no;
 $accordion-navigation-active-bg-color: $blue-xlight;
 $accordion-navigation-font-color: $blue-dark;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
 $accordion-content-padding: rem-calc(16);
-$accordion-content-active-bg-color: inherit;
+$accordion-content-active-bg-color: $blue;
 
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -

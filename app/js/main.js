@@ -83,6 +83,40 @@ jQuery(document).ready(function() {
   });
 
 
+/* Master Slider */
+      var slider = new MasterSlider();
+      slider.setup('masterslider' , {
+        width:1920,    // slider standard width
+        height:1024,   // slider standard height
+        space:0,
+        preload:2,
+        overPause:false,
+        loop:true,
+        autoplay:true,
+        fullwidth:true,
+        autoHeight:true,
+        view:"fade",
+        //grabCursor:true,
+        //mouse:true,
+        //swipe:false
+        
+        // more slider options goes here...
+        
+        // more slider options goes here...
+      });
+      // adds Arrows navigation control to the slider.
+      slider.control('arrows');
+      slider.control('lightbox');
+      slider.control('thumblist', { 
+        autohide:false,
+        inset:false,
+        width:160,
+        height:90,
+        space:20
+      });
+
+
+
   $('.videopopup, .popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
     type: 'iframe',

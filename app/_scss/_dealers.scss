@@ -56,24 +56,31 @@
       h4 {
         font-size: 1em;
       }
+      padding-left: 4em;
     }
   }
 }
 
 
 .panelhead {
+  @include clearfix();
   position: relative;
-  padding:rem-calc(12) 0;
+  //padding:rem-calc(12) 0;
   line-height: 1;
   font-weight: 700;
+  width: 100%;
   &:hover, &:focus {
-    background-color: $gray-light;
+    background-color: $blue-no;
+  }
+
+  .active & {
+    background-color: $blue;
   }
 
   span {
-    display: inline-block;
-    //float:left;
-    padding:rem-calc(4) rem-calc(16);
+    display: block;
+    float:left;
+    padding:rem-calc(16) rem-calc(16);
 
     a {
       color:$blue-dark;
@@ -88,52 +95,70 @@
   }
 }
 
-.dealer__name {
-  text-transform: uppercase;
-  min-width: 33.333%;
-  font-weight: 900;
-  font-size: 1.125em;
-  padding:rem-calc(3) rem-calc(14);
+
+.panelhead {
+  .dealer__no {
+    background-color: $blue-no;
+    padding:rem-calc(16) rem-calc(12) rem-calc(16) rem-calc(4);
+    min-width: 3em;
+    text-align: right;
+    //color:#000;
+    display: block;
+    float:left;
+    border-right: 1px solid #fff;
+    .active & {
+      background-color: transparent;
+      border-right-color: transparent;
+    }    
+  }
+
+  .dealer__name {
+    text-transform: uppercase;
+    min-width: 33.333%;
+    font-weight: 900;
+    font-size: 1.125em;
+    padding:rem-calc(16) rem-calc(14) rem-calc(14);
+    .togglepanel {
+      color:inherit !important;
+    }
+
+  }
+
+  .dealer__open {
+    position: absolute;
+    right:rem-calc(-4);
+    top:rem-calc(-4);
+    .togglepanel {
+
+      font-size: 1.666em;
+      font-weight: 400;
+      color:$blue-light;
+      &:hover {
+        text-decoration: none;
+        color:$red-link;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
   .togglepanel {
-    color:inherit !important;
-  }
-
-}
-
-.dealer__open {
-  position: absolute;
-  right:0;
-  top:rem-calc(8);
-  .togglepanel {
-
-    font-size: 1.666em;
-    font-weight: 400;
-    color:$blue-light;
-    &:hover {
-      text-decoration: none;
-      color:$red-link;
+      //color:inherit !important;
+      &:hover {
+        text-decoration: none;
+        color:inherit;
+      }
+      &:focus {
+        text-decoration: none;
+      }
     }
-    &:focus {
-      text-decoration: none;
-    }
-  }
-}
 
-.togglepanel {
-    //color:inherit !important;
-    &:hover {
-      text-decoration: none;
-      color:inherit;
-    }
-    &:focus {
-      text-decoration: none;
-    }
-  }
-
-.active .togglepanel {
-  i {
-    &:before {
-      content:"\e6e8";
+  .active .togglepanel {
+    i {
+      &:before {
+        content:"\e6e8";
+      }
     }
   }
 }

@@ -198,11 +198,10 @@ input[type="checkbox"]#navtoggle {
 	}
 }
 
-
 .division__toggle {
 	display: block;
 	text-decoration: none;
-	padding:1em .875em .875em;
+	padding:1.125em .875em .875em;
 
 	color:#fff;
 
@@ -217,6 +216,7 @@ input[type="checkbox"]#navtoggle {
 
 	i {
 		float:right;
+		transform:translateY(-.125em);
 	}
 
 }
@@ -242,7 +242,9 @@ input[type="checkbox"]#navtoggle {
 	li {
 		a {
 			display: block;
-			padding:1em .875em .875em;
+			font-size: .75em;
+			line-height: 1;
+			padding:1.125em .125em 1em 1.125em;
 			background-color: rgba($red-dark,.666);
 			color:#fff;
 			&:hover, &:focus {
