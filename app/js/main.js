@@ -14,7 +14,6 @@ $(document).foundation();
 //   }
 // });
 
-
 $(".togglepanel").click( function(e) {
     e.preventDefault();
     $(this).closest('.accordion-navigation').toggleClass("active");
@@ -63,7 +62,7 @@ jQuery(document).ready(function() {
  
   });
 
-    $("#owl-plister").owlCarousel({
+  $("#owl-plister").owlCarousel({
       autoPlay : false,
       //stopOnHover : true,
       navigation : false, // Show next and prev buttons
@@ -72,48 +71,36 @@ jQuery(document).ready(function() {
       singleItem:true,
       autoHeight : true,
       transitionStyle:"fade"
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
   });
 
 
-/* Master Slider */
-      var slider = new MasterSlider();
-      slider.setup('masterslider' , {
-        width:1920,    // slider standard width
-        height:1024,   // slider standard height
-        space:0,
-        preload:2,
-        overPause:false,
-        loop:true,
-        autoplay:true,
-        fullwidth:true,
-        autoHeight:true,
-        view:"fade",
-        //grabCursor:true,
-        //mouse:true,
-        //swipe:false
-        
-        // more slider options goes here...
-        
-        // more slider options goes here...
-      });
-      // adds Arrows navigation control to the slider.
-      slider.control('arrows');
-      slider.control('lightbox');
-      slider.control('thumblist', { 
-        autohide:false,
-        inset:false,
-        width:160,
-        height:90,
-        space:20
-      });
+    /* Master Slider */
+    var slider = new MasterSlider();
+    slider.setup('masterslider' , {
+      width:1920,    // slider standard width
+      height:1024,   // slider standard height
+      space:0,
+      preload:2,
+      overPause:false,
+      loop:true,
+      autoplay:true,
+      fullwidth:true,
+      autoHeight:true,
+      view:"fade",
+      //grabCursor:true,
+      //mouse:true,
+      //swipe:false
+    });
+
+    slider.control('arrows');
+    slider.control('lightbox');
+    slider.control('thumblist', { 
+      autohide:false,
+      inset:false,
+      width:160,
+      height:90,
+      space:20
+    });
 
 
 

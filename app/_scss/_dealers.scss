@@ -56,7 +56,9 @@
       h4 {
         font-size: 1em;
       }
-      padding-left: 4em;
+      @media #{$large-up} {
+        padding-left: 4em;
+      }
     }
   }
 }
@@ -65,10 +67,14 @@
 .panelhead {
   @include clearfix();
   position: relative;
-  //padding:rem-calc(12) 0;
+  font-size: .875em;
   line-height: 1;
   font-weight: 700;
   width: 100%;
+
+  @media #{$large-up} {
+     font-size: 1em;
+  }
   &:hover, &:focus {
     background-color: $blue-no;
   }
@@ -94,7 +100,26 @@
     }
   }
 }
-
+.panelhead.panelhead__titles {
+  font-size: .75em;
+  font-weight: 400;
+  &:hover, &:focus {
+    background-color: transparent;
+  }
+  .dealer__no {
+    background-color: transparent;
+  }
+  .dealer__name {
+    font-weight: 400;
+    font-size: 1em;
+    padding:rem-calc(16) rem-calc(16);
+    text-transform: none;
+  }
+  .dealer__open {
+    top:0;
+    right:0;
+  }
+}
 
 .panelhead {
   .dealer__no {
@@ -102,13 +127,18 @@
     padding:rem-calc(16) rem-calc(12) rem-calc(16) rem-calc(4);
     min-width: 3em;
     text-align: right;
-    //color:#000;
-    display: block;
     float:left;
-    border-right: 1px solid #fff;
+    //border-right: 1px solid #fff;
+
+
     .active & {
       background-color: transparent;
-      border-right-color: transparent;
+      //border-right-color: transparent;
+    }
+    a {
+      &:hover, &:focus {
+        color:$red-link;
+      }
     }    
   }
 
@@ -122,6 +152,13 @@
       color:inherit !important;
     }
 
+  }
+
+  .dealer__tel {
+    display: none;
+    @media #{$large-up} {
+     display: block;
+    }
   }
 
   .dealer__open {

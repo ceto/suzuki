@@ -28,6 +28,6 @@ pygments: false
 
 excerpt_separator: <!--more-->
 
-baseurl: http://ceto.no-ip.org/suzuki/
+baseurl: http://suzuki.szabogabi.com/
 
 permalink: /:title.html
